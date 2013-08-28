@@ -1,0 +1,325 @@
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="en-gb" class="no-js"-->
+<head>
+  <title>DirectFX</title>
+    
+	
+    <meta name="keywords" content="FX,trading,options,calls,puts,australlia,broker" />
+    <meta name="description" content="An Australlian FX trading firm." />
+    <!-- Favicon --> 
+    <%= favicon_link_tag 'favicon.ico' %>
+	<!-- this styles only adds some repairs on idevices  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Google fonts - witch you want to use - (rest you can just remove) -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+  <%= javascript_include_tag    "html5", media: "all", "data-turbolinks-track" => true %>
+  <![endif]-->
+
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+
+
+</head>
+<body>
+
+<div class="site_wrapper">
+
+    <div class="container_full">
+    	
+        <div class="menu_sticky">
+          
+        <!-- top show hide --> 
+        <div class="slidingDiv">
+                
+            <div class="top_contact_info">
+                <div class="container">
+                    <ul class="tci_list_left">
+                        <li><a href="index.html">Home</a></li>
+                        <li>|</li>
+                        <li><a href="#">Help</a></li>
+                        <li>|</li>
+                        <li><a href="#">FAQs</a></li>
+                        <li>|</li>
+                        <li><a href="#">Add Funds</a></li>
+                    </ul>
+                
+                    <ul class="tci_list">
+
+                    
+                        <li class="phone">+61 2 8038-5093</li>
+                        <li class="email"><a href="mailto:info@anova.com">info@anova.com</a></li>
+                        <li><a href="#"><%= image_tag("top_si1.png") %></a></li>
+                        <li><a href="#"><%= image_tag("top_si2.png") %></a></li>
+                        <li><a href="#"><%= image_tag("top_si3.png") %></a></li>
+                        <li><a href="#"><%= image_tag("top_si4.png") %></a></li>
+                        <li><a href="#"><%= image_tag("top_si5.png") %></a></li>
+                        <li><a href="#"><%= image_tag("top_si6.png") %></a></li>
+                        <li><a href="#"><%= image_tag("top_si7.png") %></a></li>
+                         
+                    </ul>
+                </div>
+            </div><!-- end top contact info -->
+        
+        </div>
+        
+        <div class="top-border-line"></div>
+        <div class="container"><div class="show_hide_butr"><div class="show_hide"></div></div></div>
+        <!-- end top show hide --> 
+        
+        <div class="top_section">
+    
+    	<div class="container">
+
+    		<div class="one_fourth"><div id="logo"><a href="index.html"><h1>direct<i>FX</i>.com</h1></a></div></div><!-- end logo -->
+            	
+            <div class="three_fourth last">
+               
+                              <nav id="access" class="access" role="navigation">
+               
+                <div id="menu" class="menu">
+                    
+                    <ul id="tiny">
+                    
+                        <li><%= link_to "Who We Are", who_url %>
+                            <!-- <a href="index.html" class="active">Who We Are</a> -->
+                        
+                            <ul> 
+                                <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
+                                <li><a href="index-page1.html">Home Page 1</a></li>
+                                <li><a href="index-page2.html">Home Page 2</a></li>
+                                <li><a href="index-page3.html">Home Page 3</a></li>
+                                <li><a href="index-page4.html">Home Page 4</a></li>
+                                <li><a href="index-page5.html">Home Page 5</a></li>
+                                <li><a href="index-page6.html">Home Page 6</a></li>
+                                <li><a href="index-page7.html">Home Page 7</a></li>
+                                <li><a href="index-page8.html">Home Page 8</a></li>
+                                <li><a href="index-page9.html">Home Page 9</a></li>
+                                <li><a href="index-page10.html">Home Page 10</a></li>
+                            </ul>
+                         </li>  
+                        
+                        <li><a href="#">Platforms</a>
+                        
+                            <ul>
+                                <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
+                                <li><a href="elements.html">Elements</a></li>
+                                <li><a href="typography.html">Typography</a></li>
+                                <li><a href="pricing-tables.html">Pricing Tables</a></li>
+                                <li><a href="columns.html">Page Columns</a></li>
+                                <li><a href="testimonials.html">Testimonials</a></li>
+                                <li><a href="faqs.html">FAQs</a></li>
+                                <li><a href="tabs.html">Tabs</a></li>
+                                <li><a href="#">4 Headers &amp; Footers</a></li>                         
+                                <li><a href="#">Custom BGs &amp; Colors</a></li>
+                                <li><a href="#">PSD Files Included</a></li>                             
+                                <li><a href="#">Clean &amp; Valid Code</a></li>
+                                <li><a href="#">Useful Typo Elements</a></li>
+                                <li><a href="#">Cross Browser Check</a></li>   
+                            </ul>
+                            
+                        </li>
+                        
+                        <li><a href="#">Trading Tools</a>
+                        
+                            <ul>
+                                <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
+                                <li><a href="http://gsrthemes.com/anova/layout2/fullwidth/index.html">Header Style 1</a></li>
+                                <li><a href="http://gsrthemes.com/anova/layout3/fullwidth/index.html">Header Style 2</a></li>
+                                <li><a href="http://gsrthemes.com/anova/layout4/fullwidth/index.html">Header Style 3</a></li>
+                                <li><a href="http://gsrthemes.com/anova/layout5/fullwidth/index.html">Header Style 4</a></li>
+                                <li><a href="http://gsrthemes.com/anova/layout1/fullwidth/index.html">Header Style 5</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="#">Market Reports</a>
+                        
+                            <ul>
+                                <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
+                                <li><a href="http://gsrthemes.com/anova/layout2/fullwidth/index.html">Footer Style 1</a></li>
+                                <li><a href="http://gsrthemes.com/anova/layout3/fullwidth/index.html">Footer Style 2</a></li>
+                                <li><a href="http://gsrthemes.com/anova/layout4/fullwidth/index.html">Footer Style 3</a></li>
+                                <li><a href="http://gsrthemes.com/anova/layout5/fullwidth/index.html">Footer Style 4</a></li>
+                                <li><a href="http://gsrthemes.com/anova/layout1/fullwidth/index.html">Footer Style 5</a></li>
+                            </ul>
+                        </li>
+                        
+<!--                         <li><a href="#">Fund Drop</a>
+                        
+                            <ul>
+                                <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
+                                <li><a href="index.html">Revolution Slider</a></li>
+                                <li><a href="index-slider-2.html">Nivo Slider</a></li>
+                                <li><a href="index-slider-1.html">Thumbs Slider</a></li>
+                                <li><a href="index-slider-3.html">Static Image</a></li>
+                                <li><a href="index-slider-4.html">Video Slider</a></li>
+                            </ul>
+                        </li> -->
+                          
+                        <li><a href="#">Partner With Us</a>
+                        
+                            <ul>
+                                <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
+                                <li><a href="about.html">About Page Style 1</a></li>
+                                <li><a href="about-2.html">About Page Style 2</a></li>
+                                <li><a href="services.html">Services Style 1</a></li>
+                                <li><a href="services-2.html">Services Style 2</a></li>
+                                <li><a href="full-width.html">Full Width Page</a></li>
+                                <li><a href="left-sidebar.html">Left Sidebar Page</a></li>
+                                <li><a href="right-sidebar.html">Right Sidebar Page</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="last"><a href="#" >Contact</a></li>
+
+                    
+                        
+                    </ul>
+                    
+                </div>
+                
+            </nav><!-- end nav menu -->
+          
+        	</div>
+                
+
+		</div> 
+
+	</div>
+    
+    </div>
+
+</div><!-- end top -->
+
+<%= yield %>
+
+<div class="clearfix" ></div>
+<div class="mar_top3" ></div>
+
+<div class="clearfix bottom_buildings" ></div><!-- end buildings graph -->
+</div>
+
+<!-- Footer ======================================= -->
+
+<div id="footer">
+
+<div class="footer_columns">
+
+	<div class="container">
+    
+        <div class="one_fourth">
+        
+        	<h2><i>useful</i> links</h2>
+            
+            <ul class="arrows_list1">
+            <li><a href="#">Home Page Variations</a></li>
+            <li><a href="#">Awsome Slidershows</a></li>
+            <li><a href="#">Features and Typography</a></li>
+            <li><a href="#">Different &amp; Unique Pages</a></li>
+            <li><a href="#">Single and Portfolios</a></li>
+            <li><a href="#">Recent Blogs or News</a></li>
+            <li><a href="#">Layered PSD Files</a></li>
+			</ul>
+             
+        </div><!-- end section --> 
+        
+        <div class="one_fourth">
+        	
+            <div class="twitter_feed">
+            
+            	<h2><i>Latest</i> Tweets</h2>
+                
+                <div class="left"><%= image_tag("twitter-bird.png") %></div>
+                <div class="right"><a href="https://twitter.com/gsrthemes9" target="_blank">gsrthemes9</a>: aoxhost - Responsive html5 Professional Hosting Theme<br />
+				<a href="#" class="small">.9 days ago</a> .<a href="#" class="small">reply</a> .<a href="#" class="small">retweet</a> .<a href="#" class="small">favorite</a></div>
+                
+                <div class="clearfix divider_line4"></div>
+                
+                <div class="left"><%= image_tag("twitter-bird.png") %></div>
+                <div class="right"><a href="https://twitter.com/gsrthemes9" target="_blank">gsrthemes9</a>: Kinvexy - Responsive HTML5 / CSS3, Simple, Clean and Professional Corporate Theme for Multipurpose Use.<br />
+				<a href="#" class="small">.8 days ago</a> .<a href="#" class="small">reply</a> .<a href="#" class="small">retweet</a> .<a href="#" class="small">favorite</a></div>
+                
+            </div>
+        
+        </div><!-- end section --> 
+        
+        <div class="one_fourth">
+        
+        	<h2><i>Flickr</i> Photos</h2>
+            
+        	<div id="flickr_badge_wrapper">
+            	<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=9&amp;display=latest&amp;size=s&amp;layout=h&amp;source=user&amp;user=93382411%40N07"></script>     
+            </div>
+            
+        </div><!-- end section --> 
+        
+        <div class="one_fourth last">
+        
+        	<h2><i>newsletter</i> signup</h2>
+            
+        	<div class="newsletter">
+            <p>Please provide your email to get latest information of updates special offers, products or events for free.</p>
+           
+            <form method="get" action="index.html">   
+				<input class="enter_email_input" name="samplees" id="samplees" value="Enter your email address" onFocus="if(this.value == 'Enter your email address') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Enter your email address';}" type="text">
+				<input name="" value="subscribe" class="input_submit" type="submit">
+			</form>
+             
+             <div class="rss_feeds">Subscribe to the <a href="#">Anova RSS feed</a></div>
+             
+            </div>
+        
+        </div><!-- end section -->
+
+</div>
+  
+</div><!-- end footer all columns --> 
+
+<div class="clearfix divider_line5"></div>
+
+<div class="container">
+	<div class="scrollup_area"><a href="#" class="scrollup">i</a></div><!-- end scroll to top of the page-->
+</div>
+
+<div class="copyright_info">
+
+    <div class="container">
+    
+        <div class="three_fourth">
+        
+            <div class="footer_logo"><a href="index.html"><h1>ANO<i>V</i>A</h1></a></div><!-- end logo -->
+            <b>Copyright © 2013 anova.com. All rights reserved.  <a href="#">Terms of Use</a>  <a href="#">Privacy Policy</a></b>
+            
+        </div>
+    
+    	<div class="one_fourth last">
+     		
+            <div class="address_info">
+            
+            	2901 M P Brook Way, Houston WA 98122<br />
+                Phone: +88 123 456 7890<br />
+                E-mail: <a href="mailto:gsrthemes9@gmail.com">info@anova.com</a><br />
+            
+            </div>
+                
+    	</div>
+    
+    </div>
+    
+</div><!-- end copyright info -->  
+
+</div>
+ 
+</div>
+
+ 
+
+</body>
+</html>
+
