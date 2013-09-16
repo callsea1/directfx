@@ -7,6 +7,7 @@
 	width: 737px;
 	margin: auto auto auto auto;
 }
+/*added this for icons on about page.*/
 
 .fullimage_box2 li.ef-icon {
 	margin-left: 52px;
@@ -17,6 +18,11 @@
 
 .fullimage_box2 li.ef-icon2 {
 	margin-left: 52px;
+}
+
+/*change padding for image in lower view*/
+.portfolio_area {
+	padding: 20px 0 0px 96px;
 }
 
 #access .menu ul li a {
@@ -324,6 +330,7 @@ a.show_hide{
 	margin: auto auto auto auto;
 }
 
+/*icons on about page*/
 
 .fullimage_box2 li.ef-icon {
 	margin-left: 170px;
@@ -334,6 +341,11 @@ a.show_hide{
 
 .fullimage_box2 li.ef-icon2 {
 	margin-left: 170px;
+}
+
+/*change padding for image in lower view*/
+.portfolio_area {
+	padding: 20px 0 0px 60px;
 }
 
 .content_left {
@@ -916,6 +928,11 @@ a.show_hide{
 .container {
 	width: 300px;
 	margin: auto auto auto auto;
+}
+
+/*change padding for image in lower view*/
+.portfolio_area {
+	padding: 20px 0 0px 38px;
 }
 
 .content_left {

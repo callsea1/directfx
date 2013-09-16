@@ -4,7 +4,7 @@
 <!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><html lang="en-gb" class="no-js"-->
 <head>
-  <title>DirectFX</title>
+  <title><%= @title %></title>
     
 	
     <meta name="keywords" content="FX,trading,options,calls,puts,australlia,broker" />
@@ -41,7 +41,7 @@
             <div class="top_contact_info">
                 <div class="container">
                     <ul class="tci_list_left">
-                        <li><a href="index.html">Home</a></li>
+                        <li><%= link_to "Home", root_path %></li>
                         <li>|</li>
                         <li><a href="#">Help</a></li>
                         <li>|</li>
@@ -54,14 +54,10 @@
 
                     
                         <li class="phone">+61 2 8038-5093</li>
-                        <li class="email"><a href="mailto:info@anova.com">info@anova.com</a></li>
+                        <li class="email"><a href="mailto:info@anova.com">info@directfx.com</a></li>
                         <li><a href="#"><%= image_tag("top_si1.png") %></a></li>
                         <li><a href="#"><%= image_tag("top_si2.png") %></a></li>
-                        <li><a href="#"><%= image_tag("top_si3.png") %></a></li>
-                        <li><a href="#"><%= image_tag("top_si4.png") %></a></li>
-                        <li><a href="#"><%= image_tag("top_si5.png") %></a></li>
-                        <li><a href="#"><%= image_tag("top_si6.png") %></a></li>
-                        <li><a href="#"><%= image_tag("top_si7.png") %></a></li>
+                        <li><a href="#"><%= image_tag("top_si_linkedin.png") %></a></li>
                          
                     </ul>
                 </div>
@@ -77,7 +73,7 @@
     
     	<div class="container">
 
-    		<div class="one_fourth"><div id="logo"><a href="index.html"><h1>direct<i>FX</i>.com</h1></a></div></div><!-- end logo -->
+    		<div class="one_fourth"><div id="logo"><h1><%=link_to "direct<i>FX</i>.com".html_safe, root_path %></h1></div></div><!-- end logo -->
             	
             <div class="three_fourth last">
                
@@ -92,87 +88,41 @@
                         
                             <ul> 
                                 <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
-                                <li><a href="index-page1.html">Home Page 1</a></li>
-                                <li><a href="index-page2.html">Home Page 2</a></li>
-                                <li><a href="index-page3.html">Home Page 3</a></li>
-                                <li><a href="index-page4.html">Home Page 4</a></li>
-                                <li><a href="index-page5.html">Home Page 5</a></li>
-                                <li><a href="index-page6.html">Home Page 6</a></li>
-                                <li><a href="index-page7.html">Home Page 7</a></li>
-                                <li><a href="index-page8.html">Home Page 8</a></li>
-                                <li><a href="index-page9.html">Home Page 9</a></li>
-                                <li><a href="index-page10.html">Home Page 10</a></li>
+                                <li><%= link_to "Regulations", regulation_url %></li>
+                                <li><%= link_to "Press Releases", press_release_url %></li>
+
                             </ul>
                          </li>  
                         
-                        <li><a href="#">Platforms</a>
+                        <li><a href="#">Forex Trading</a>
                         
                             <ul>
                                 <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
-                                <li><a href="elements.html">Elements</a></li>
-                                <li><a href="typography.html">Typography</a></li>
-                                <li><a href="pricing-tables.html">Pricing Tables</a></li>
-                                <li><a href="columns.html">Page Columns</a></li>
-                                <li><a href="testimonials.html">Testimonials</a></li>
-                                <li><a href="faqs.html">FAQs</a></li>
-                                <li><a href="tabs.html">Tabs</a></li>
-                                <li><a href="#">4 Headers &amp; Footers</a></li>                         
-                                <li><a href="#">Custom BGs &amp; Colors</a></li>
-                                <li><a href="#">PSD Files Included</a></li>                             
-                                <li><a href="#">Clean &amp; Valid Code</a></li>
-                                <li><a href="#">Useful Typo Elements</a></li>
-                                <li><a href="#">Cross Browser Check</a></li>   
+                                <li><a href="elements.html">Trading Tools</a></li> 
                             </ul>
                             
                         </li>
                         
-                        <li><a href="#">Trading Tools</a>
+                        <li><a href="#">CFDS</a>
                         
                             <ul>
                                 <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
-                                <li><a href="http://gsrthemes.com/anova/layout2/fullwidth/index.html">Header Style 1</a></li>
-                                <li><a href="http://gsrthemes.com/anova/layout3/fullwidth/index.html">Header Style 2</a></li>
-                                <li><a href="http://gsrthemes.com/anova/layout4/fullwidth/index.html">Header Style 3</a></li>
-                                <li><a href="http://gsrthemes.com/anova/layout5/fullwidth/index.html">Header Style 4</a></li>
-                                <li><a href="http://gsrthemes.com/anova/layout1/fullwidth/index.html">Header Style 5</a></li>
+
                             </ul>
                         </li>
                         
-                        <li><a href="#">Market Reports</a>
+                        <li><a href="#">Binary Options</a>
                         
                             <ul>
                                 <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
-                                <li><a href="http://gsrthemes.com/anova/layout2/fullwidth/index.html">Footer Style 1</a></li>
-                                <li><a href="http://gsrthemes.com/anova/layout3/fullwidth/index.html">Footer Style 2</a></li>
-                                <li><a href="http://gsrthemes.com/anova/layout4/fullwidth/index.html">Footer Style 3</a></li>
-                                <li><a href="http://gsrthemes.com/anova/layout5/fullwidth/index.html">Footer Style 4</a></li>
-                                <li><a href="http://gsrthemes.com/anova/layout1/fullwidth/index.html">Footer Style 5</a></li>
                             </ul>
                         </li>
                         
-<!--                         <li><a href="#">Fund Drop</a>
-                        
-                            <ul>
-                                <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
-                                <li><a href="index.html">Revolution Slider</a></li>
-                                <li><a href="index-slider-2.html">Nivo Slider</a></li>
-                                <li><a href="index-slider-1.html">Thumbs Slider</a></li>
-                                <li><a href="index-slider-3.html">Static Image</a></li>
-                                <li><a href="index-slider-4.html">Video Slider</a></li>
-                            </ul>
-                        </li> -->
                           
                         <li><a href="#">Partner With Us</a>
                         
                             <ul>
                                 <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
-                                <li><a href="about.html">About Page Style 1</a></li>
-                                <li><a href="about-2.html">About Page Style 2</a></li>
-                                <li><a href="services.html">Services Style 1</a></li>
-                                <li><a href="services-2.html">Services Style 2</a></li>
-                                <li><a href="full-width.html">Full Width Page</a></li>
-                                <li><a href="left-sidebar.html">Left Sidebar Page</a></li>
-                                <li><a href="right-sidebar.html">Right Sidebar Page</a></li>
                             </ul>
                         </li>
                         
@@ -215,7 +165,7 @@
     
         <div class="one_fourth">
         
-        	<h2><i>useful</i> links</h2>
+        	<h2><i>Client</i> tools</h2>
             
             <ul class="arrows_list1">
             <li><a href="#">Home Page Variations</a></li>
@@ -251,11 +201,9 @@
         
         <div class="one_fourth">
         
-        	<h2><i>Flickr</i> Photos</h2>
+        	<h2><i>Trading</i> Platforms</h2>
             
-        	<div id="flickr_badge_wrapper">
-            	<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=9&amp;display=latest&amp;size=s&amp;layout=h&amp;source=user&amp;user=93382411%40N07"></script>     
-            </div>
+
             
         </div><!-- end section --> 
         
@@ -290,21 +238,32 @@
 <div class="copyright_info">
 
     <div class="container">
+        This is not intended for the solicitation of US clients. 
+Direct FX does not accept clients from The United States of America.
+
+
+Foreign Exchange trading involves substantial risk of loss and is not suitable for all investors. READ FULL DISCLOSURE. DIRECTFX.COM is compensated through the bid/ask spread and/or commissions on transactions. 
+
+RISK WARNING: Trading of foreign exchange contracts, contracts for difference, derivatives and other investment products which are leveraged, can carry a high level of risk. These products may not be suitable for all investors. It is possible to lose more than your initial investment. You should carefully consider whether trading is suitable for you in light of your circumstances, knowledge, and financial resources. Opinions, market data, and recommendations are subject to change at any time. All funds committed should be risk capital. Past performance is not necessarily indicative of future results. Please read the PDS and FSG before making any decision to trade Direct Fx products. The risks must be understood prior to trading. 
+
+DISCLAIMER: Direct Fx refers to Direct FX Trading Pty Ltd. Direct FX Trading Pty Ltd is an Australian company which is registered with ASIC, ACN 120 189 424 and possesses Australian Financial Services License number 305539. <br><br>
     
         <div class="three_fourth">
         
-            <div class="footer_logo"><a href="index.html"><h1>ANO<i>V</i>A</h1></a></div><!-- end logo -->
-            <b>Copyright © 2013 anova.com. All rights reserved.  <a href="#">Terms of Use</a>  <a href="#">Privacy Policy</a></b>
+            <div class="footer_logo"><a href="/"><h1>DirectFX</h1></a></div><!-- end logo -->
+            <b>Copyright © Direct FX Trading PTY LTD | ACN 120 189 424 | AFSL No. 305539 | All Rights Reserved  <a href="#">Terms of Use</a>  <a href="#">Privacy Policy</a></b>
             
         </div>
     
     	<div class="one_fourth last">
      		
             <div class="address_info">
+
+
             
-            	2901 M P Brook Way, Houston WA 98122<br />
-                Phone: +88 123 456 7890<br />
-                E-mail: <a href="mailto:gsrthemes9@gmail.com">info@anova.com</a><br />
+            	19-21 Hunter Street, Level 2 Sydney, NSW 2000, Australia<br />
+                Phone: +61 2 8038-5093<br />
+                E-mail: <a href="mailto:gsrthemes9@gmail.com">@directfx.com</a><br />
             
             </div>
                 

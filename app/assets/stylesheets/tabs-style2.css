@@ -1,0 +1,245 @@
+
+	ul.tabs-two li {
+		padding: 0;
+		margin: 0 0 0 0px;
+		min-height: 45px;
+		line-height: 45px;
+ 		border-left: none;
+		margin-bottom: 0px;
+		overflow: hidden;
+		position: relative;
+		border-bottom: none;
+ 	}
+	ul.tabs-two li a {
+		text-decoration: none;
+		color: #454545;
+		display: block;
+		font-size: 12px;
+		text-transform: uppercase;
+ 		outline: none;
+ 		cursor: pointer;
+		text-align: left;
+		padding: 0px 15px 0px 15px;
+		background-color: #eee;
+		width: 100%;  /*changed for press release tab 9/10/13 */
+		font-style: normal;
+		border-bottom: 1px solid #fff;
+		font-family: 'Open Sans' !important;
+		font-weight: 600;
+	}
+	ul.tabs-two li a:hover {
+ 	}
+ 	
+	html ul.tabs-two li.active, html ul.tabs-two li.active a,  html ul.tabs-two li.active a:hover  { 
+		color:#ff8100;
+		background-color: #fff;
+		height: 44px;
+ 	}
+
+
+#tabs-two.fullpage {
+	padding:0px;
+	float:left;
+	clear:both;
+	width: 100%;
+}
+ul.tabs-two.fullpage {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	min-height: 45px;
+ 	width: 83.9%; /*changed 9/12 to fix issues*/
+	background: #eee;
+}
+.tab-container-two.fullpage {
+ 	overflow: hidden;
+	float: left; 
+	padding: 30px 10px 2px 4px;
+	width: 82.3%;
+	background-color: #fff;
+	border-bottom: 3px solid #eee;
+	border-right: 1px solid #eee;
+	border-left: 1px solid #eee;
+	
+}
+
+ul.tabs-two.fullpage li a {
+	text-decoration: none;
+	color: #727272;
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+ 	outline: none;
+ 	cursor: pointer;
+	text-align: left;
+	padding: 0px 16px 0px 10px;
+	background-color: #eee;
+	width: 100%; /*changed 9/12 to fix issues*/
+	border-bottom: 1px solid #fff;
+	margin-bottom: 0px;
+
+}
+
+ul.tabs-two.fullpage li a:hover {
+	color: #fff;
+	background-color: #727272;
+}
+
+ul.tabs-two.fullpage li.active a:hover {
+	color: #fff;
+	background-color: #bbb;
+}
+
+@media only screen and (min-width: 1000px){}
+@media only screen and (min-width: 768px) and (max-width: 999px){
+
+
+#tabs-two.fullpage {
+	padding:0px;
+	float:left;
+	clear:both;
+	width: 100%;
+}
+ul.tabs-two.fullpage {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	min-height: 45px;
+ 	width: 83.9%;
+	background: #eee;
+}
+.tab-container-two.fullpage {
+ 	overflow: hidden;
+	float: left; 
+	margin-right: 0px;
+	margin-left: 0px;
+	width: 81.8%;
+
+}
+
+li.tab-container-two.fullpage {
+ 	overflow: hidden;
+	float: left; 
+	margin-right: 60px;
+	margin-left: 60px;
+	width: 100%;
+
+}
+
+ul.tabs-two.fullpage li a {
+	width:580px;
+	padding-left: 30px;
+	font-weight: 400;
+	font-size: 11px;
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
+#tabs-two.fullpage {
+	padding:0px;
+	float:left;
+	clear:both;
+	width: 100%;
+}
+ul.tabs-two.fullpage {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	min-height: 35px;
+ 	width: 86%;
+	background: #eee;
+}
+.tab-container-two.fullpage {
+ 	overflow: hidden;
+	float: left; 
+	padding: 30px;
+	width: 72%;
+	background-color: #fff;
+	border-bottom: 1px solid #dcdcdc;
+	border-right: 1px solid #dcdcdc;
+	border-top: 1px solid #eee;
+}
+
+ul.tabs-two.fullpage li a {
+	text-decoration: none;
+	color: #727272;
+	display: block;
+	font-size: 10px;
+	text-transform: uppercase;
+ 	outline: none;
+ 	cursor: pointer;
+	text-align: left;
+	padding: 0px 10px 0px 10px;
+	background-color: #eee;
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	font-weight: 200;
+}
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 479px){
+
+#tabs-two.fullpage {
+	padding:0px;
+	float:left;
+	clear:both;
+	width: 100%;
+}
+ul.tabs-two.fullpage {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	min-height: 35px;
+ 	width: 86%;
+	background: #eee;
+}
+.tab-container-two.fullpage {
+ 	overflow: hidden;
+	float: left; 
+	padding: 30px;
+	width: 65.2%;
+	background-color: #fff;
+	border-bottom: 1px solid #dcdcdc;
+	border-right: 1px solid #dcdcdc;
+	border-top: 1px solid #eee;
+}
+
+ul.tabs-two.fullpage li a {
+	text-decoration: none;
+	color: #727272;
+	display: block;
+	font-size: 10px;
+	text-transform: uppercase;
+ 	outline: none;
+ 	cursor: pointer;
+	text-align: left;
+	padding: 0px 10px 0px 10px;
+	background-color: #eee;
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	font-weight: 200;
+}
+img.image_left1{
+	width:70%;
+	padding-left: 25px;
+}
+.big_text1{
+	padding-left: 26px;
+}
+}
+

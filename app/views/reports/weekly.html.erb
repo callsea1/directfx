@@ -1,0 +1,64 @@
+
+<div class="daily">
+
+<div class="clearfix"></div>
+ 
+
+
+<div class="clearfix"></div>   
+<div class="container">
+
+
+
+	<div class="content_fullwidth">
+
+	<h2><i>Weekly</i> Market Reports</h2>
+			<%count = 0%>
+        
+        <div id="tabs">
+			<ul class="tabs">  
+			<% @contents.each do |line| %>
+			<% if (line.include? "[expand") || (line.include? "[Expand") %>
+			<li class=""><a href="#tab<%=count%>"><%= line.split("\"")[1] %></a></li>
+			<%count = count+1 %>
+			<%end%>
+			<% end%>	
+			</ul>
+			<!-- /# end tab links -->	
+
+
+		<div class="tab-container">
+			<%count2 = 0 %>
+
+		
+		<% @contents.each do |line| %>
+			
+			<% if (line.include? "[expand") || (line.include? "[Expand") %>
+			<div id="tab<%=count2%>" class="tab-content">	
+			<%count2 = count2+1 %>
+			<%end%>	
+
+			<% if (line.include? "[/expand") || (line.include? "[/Expand") %>
+			</div><!-- end tab single section --> 
+			<%end%>
+
+
+			<% if !line.include?("[expand") &&  !line.include?("[/expand") && !line.include?("[Expand") &&  !line.include?("[/Expand") && !line.blank? %>
+			<%= "#{line.html_safe}" %> </br>
+			<%end%>
+
+		<% end%>
+ 			
+		</div>
+		
+		</div><!-- end tab -->
+
+ 
+</div>
+
+</div><!-- end main content area -->
+
+
+<div class="clearfix"></div>
+
+</div>

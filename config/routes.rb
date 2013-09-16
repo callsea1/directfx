@@ -4,7 +4,14 @@ DirectfxRails::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root 'site#index'
-   get 'who_we_are' => 'who_we_are#show', as: :who
+
+   get '/who_we_are' => 'who_we_are#show', as: :who
+   get '/regulation' => 'who_we_are#regulation', as: :regulation
+   get '/press_release' => 'who_we_are#press', as: :press_release
+
+   get '/reports/daily' => 'reports#daily', as: :daily_report
+   get '/reports/weekly' => 'reports#weekly', as: :weekly_report
+   get '/economic_calendar' => 'reports#calendar', as: :economic_calendar
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

@@ -267,6 +267,7 @@ height: 0;
 .clearfix
 {
 	display:block;
+	background-color: #fff;
 }
 
 .image_left {

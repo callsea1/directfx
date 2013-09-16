@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+// require turbolinks
 //= require jquery-1.3.1.min
 //= require custom_thumbzoom
 //= require ddsmoothmenu
@@ -22,8 +22,10 @@
 //= require jquery.themepunch.plugins.min
 //= require jquery.themepunch.revolution.min
 //= require scripts
+//= require tabs
+//= require tabs-style2
 //= require showHide
 //= require scrollup
 //= require carous
-//= require custom_accordian
 //= require revolution
+// require jquery-ui-1.10.3

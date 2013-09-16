@@ -88,6 +88,13 @@
 	clear: right;
 }
 
+/*added for reports page*/
+.daily {
+	background-color: #FFF; 
+	margin-bottom: 0px;
+	padding-bottom: 50px;
+}
+
 
 /*------------------*/
 /*	MENU
@@ -192,7 +199,7 @@
 	border: none;
 	display: block;
 	padding: 13px 12px 13px 12px;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: 600;
 	color: #727272;
 	background: #fff no-repeat center bottom;
@@ -400,7 +407,8 @@ ul.tci_list {
 	width: 100%;
 	padding: 35px 0px 30px 0px;
 	background: #f9f9f9 url(h-multy-lines.jpg) repeat-x left top;
-	border-bottom: 1px solid #eee;
+	/*border-bottom: 1px solid #eee;*/
+	margin-bottom: -80px;
 }
 
 /* site features 2 */
@@ -685,6 +693,7 @@ ul.share_icons {
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
+	background-color: white;
 }
 .clients .jcarousel-skin-tango .jcarousel-item {
 	width: 180px;
@@ -693,6 +702,7 @@ ul.share_icons {
 	background-color: #f9f9f9;
 	border-bottom: 0px solid #d6d6d6;
 	box-shadow: none;
+
 }
 .clients .jcarousel-skin-tango .jcarousel-clip-horizontal {
 	min-height: 80px;
@@ -1137,7 +1147,7 @@ ul.clients_logos_list {
 	float: left;
 	width: 100%;
 	height: 120px;
-	background: url(buildings.jpg) no-repeat center top;
+	background: url(buildings_ext.jpg) no-repeat center top;
 	margin-top: -34px;
 }
 
@@ -1145,6 +1155,9 @@ ul.clients_logos_list {
 	float: left;
 	width: 100%;
 	text-align: center;
+	background-color: white;
+	margin-top: -30px;
+	padding-top: 10px;
 }
 .people_says h2 i {
 	color: #999;
@@ -1441,8 +1454,7 @@ ul.clients_logos_list {
 /* top show hide plugin */
 .slidingDiv{
 	text-align: center;
-	background: 
-#FF0000;
+	background: #FF0000;
 	padding: 0px 20px 0px 20px;
 	margin-top:0px;
 	height: 40px;
@@ -1592,7 +1604,7 @@ ul.small_social_links {
 
 .portfolio_image {
 	float: left;
-	width: 98%;
+	width: 90%;
 	padding: 0px;
 	margin: 0px;
 	border: 5px solid #fff;
@@ -3568,6 +3580,7 @@ ul.list10 li {
 	font-size: 27px;
 	line-height: 35px;
 	color: #999;
+	padding-bottom: 36px;
 }
 .big_text1 i {
 	color: 
