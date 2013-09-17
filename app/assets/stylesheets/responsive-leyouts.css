@@ -402,9 +402,9 @@ a.show_hide{
 	margin-bottom: 30px;
 }
 .last {
-	margin-right: 0 !important;
+	margin-right: 0;
 	clear: right;
-	margin-bottom: 0 !important;
+	margin-bottom: 0;
 }
 
 .top_section #logo {
@@ -826,8 +826,6 @@ ul.adsbanner-list {
 	border-left: 2px solid #e3e3e3;
 	border-right: 1px solid #e3e3e3;
 	border-bottom: 1px solid #e3e3e3;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 	border-radius: 5px;
 	background-color: #f9f9f9;
 }
@@ -841,8 +839,6 @@ ul.adsbanner-list {
 	border-left: 2px solid #e3e3e3;
 	border-right: 1px solid #e3e3e3;
 	border-bottom: 1px solid #e3e3e3;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 	border-radius: 5px;
 	background-color: #f9f9f9;
 }
@@ -989,9 +985,9 @@ a.show_hide{
 	margin-bottom: 30px;
 }
 .last {
-	margin-right: 0 !important;
+	margin-right: 0;
 	clear: right;
-	margin-bottom: 0 !important;
+	margin-bottom: 0;
 }
 
 .top_section #logo {
@@ -1451,8 +1447,6 @@ ul.adsbanner-list.two {
 	border-left: 2px solid #e3e3e3;
 	border-right: 1px solid #e3e3e3;
 	border-bottom: 1px solid #e3e3e3;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 	border-radius: 5px;
 	background-color: #f9f9f9;
 }
@@ -1466,8 +1460,6 @@ ul.adsbanner-list.two {
 	border-left: 2px solid #e3e3e3;
 	border-right: 1px solid #e3e3e3;
 	border-bottom: 1px solid #e3e3e3;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 	border-radius: 5px;
 	background-color: #f9f9f9;
 }

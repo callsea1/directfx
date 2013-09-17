@@ -64,10 +64,7 @@
 
 .horizontal section{   
       width:5%;   
-      height:250px;   
-      -moz-transition: width 0.2s ease-out;   
-      -webkit-transition:width 0.2s ease-out;  
-      -o-transition:width 0.2s ease-out;  
+      height:250px;     
       transition:width 0.2s ease-out;  
 }
 
@@ -78,10 +75,7 @@
 } 
 
 /*Header of closed slide*/  
-.horizontal section h2 {   
-     -webkit-transform:rotate(90deg);  
-     -moz-transform:rotate(90deg);  
-     -o-transform: rotate(90deg);  
+.horizontal section h2 {     
      transform: rotate(90deg);  
      width:240px;   
      position:relative;   
@@ -95,19 +89,13 @@
 }  
 .horizontal :target h2{   
      top:0px;  
-     left:0;  
-     -webkit-transform:rotate(0deg);  
-     -moz-transform:rotate(0deg);  
-     -o-transform: rotate(0deg);  
+     left:0;    
      transform: rotate(0deg);   
 }
 
 .vertical section{   
      width:100%;   
-     height:40px;   
-     -webkit-transition:height 0.2s ease-out;  
-     -moz-transition:height 0.2s ease-out;  
-     -o-transition:height 0.2s ease-out;  
+     height:40px;    
      transition:height 0.2s ease-out;  
 }  
   

@@ -213,12 +213,8 @@ sub {
 
 /* Links */
 a {
-	color: 
-#FF0000;
+	color: #FF0000;
 	text-decoration: none;
-	-webkit-transition:all 200ms ease-in;
-	-o-transition:all 200ms ease-in;
-	-moz-transition:all 200ms ease-in;
 }
 a:hover {
 	text-decoration: none;
@@ -260,9 +256,7 @@ height: 0;
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 /* close commented backslash hack */
-{
-	height:1%;
-}
+
 
 .clearfix
 {
