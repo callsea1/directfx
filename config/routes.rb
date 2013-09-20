@@ -13,6 +13,8 @@ DirectfxRails::Application.routes.draw do
    get '/reports/weekly' => 'reports#weekly', as: :weekly_report
    get '/economic_calendar' => 'reports#calendar', as: :economic_calendar
 
+   get '/forex_trading' => 'forex_trading#show', as: :forex_trading
+
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

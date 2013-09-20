@@ -28,6 +28,21 @@
 	/*background: url(/assets/logo-icon.png) no-repeat center 9px;*/
 }
 
+/*added for video on forex_trading show page*/
+#currensee_video{
+    width:460px;
+    height:320px;
+    padding-left: 34px;
+}
+#currensee_wrapper{
+    margin:0 auto;
+}
+ img.currensee {
+	width:50%;
+	height:50%;
+	padding: 40px 0px 0px 96px;
+}
+
 
 
 
@@ -1945,7 +1960,8 @@ ul.post_meta_links_small {
 .comment_form {
 	float: left;
 	width: 90%;
-	margin-top: 30px;
+	margin-top: 16px;
+	padding-left: 24%;
 }
 .comment_form label{
 	float: left;
@@ -1954,6 +1970,9 @@ ul.post_meta_links_small {
 	padding: 7px 10px;
 	margin-bottom: 20px;
 }
+.comment_input_bg_wrapper{
+
+}
 .comment_input_bg {
 	float: left;
 	width: 70%;
@@ -1961,10 +1980,11 @@ ul.post_meta_links_small {
 	padding: 7px 10px 0px 10px;
 	border-top: 2px solid #e3e3e3;
 	border-left: 2px solid #e3e3e3;
-	border-right: 1px solid #e3e3e3;
-	border-bottom: 1px solid #e3e3e3;
+	border-right: 2px solid #e3e3e3;
+	border-bottom: 2px solid #e3e3e3;
 	border-radius: 5px;
 	background-color: #f9f9f9;
+	margin-bottom: 5px;
 }
 .comment_textarea_bg {
 	float: left;
@@ -1985,10 +2005,13 @@ ul.post_meta_links_small {
 	width: 90%;
 	margin-top: 10px;
 }
+.comment_submit_wrapper{
+	padding-left: 200px; padding-top: 10px; padding-bottom:10px;
+}
 .comment_submit {
 	background-color: #eee;
 	border: 1px solid #ddd;
-	padding: 9px 13px;
+	padding: 5px 13px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	border-radius: 4px;
