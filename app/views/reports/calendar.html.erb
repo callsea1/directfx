@@ -1,3 +1,89 @@
 <center>
-<iframe src="http://ecal.decimalpointanalytics.info/directfx.aspx" style="width: 735px; height: 670px;" scrolling="yes" frameborder="0"></iframe>
+<%
+	require 'open-uri/cached'
+	require 'erubis'
+ 	require 'xmlsimple'
+
+
+	feed = open("http://raymperry.com/Ecal%20XMLSample.xml")
+
+	docElem = XmlSimple.xml_in(feed, {'ForceArray' => false}) %>
+
+			<style type='text/css'>
+				th {
+					background-color:#999;
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+			</style>
+			
+			<%
+			dates = []
+			docElem['Table'].each do |table|
+				if !dates.include? table['REDATE']
+					dates << table['REDATE']
+				end
+			end
+
+			dates = dates.sort
+			%>
+			
+			<form action=''><select>
+			<%
+			dates.each do |date|
+				raw("<option value='#{date}'>#{date}</option>")
+			end
+			%>
+
+			</select>
+
+			<input type='checkbox' value='weekly' />Weekly</form>
+			<table>
+				<th>Serial Number</th>
+				<th>Release Date</th>
+				<th>Release Time</th>
+				<th>Release Date/Time</th>
+				<th>Country Name</th>
+				<th>Frequency</th>
+				<th>Relevance</th>
+				<th>Indicator Name</th>
+				<th>Indicator Type</th>
+				<th>Indicator Source</th>
+				<th>Indicator Description</th>
+				<th>Actual Value</th>
+				<th>Forecast Value</th>
+				<th>Previous Value</th>
+				<th>For Period</th>
+				<th>Source Link</th>
+				<th>Indicator Sub Type</th>
+				<th>Currency Name</th>
+				<th>Country Flag</th>
+			
+<%
+	docElem['Table'].each do |table|
+		raw("<tr>")
+		raw("<td>" + table['M008CODE'] + "</td>")
+		raw("<td>" + table['REDATE'] + "</td>")
+		raw("<td>" + table['RETIME'] + "</td>")
+		raw("<td>" + table['DATECOL2'] + "</td>")
+		raw("<td>" + table['COUNTRY'] + "</td>")
+		raw("<td>" + table['FREQUENCY'] + "</td>")
+		raw("<td>" + table['RELEVANCE'] + "</td>")
+		raw("<td>" + table['INDNAME'] + "</td>")
+		raw("<td>" + table['INDTYPE'] + "</td>")
+		raw("<td>" + table['INDSOURCE'] + "</td>")
+		raw("<td>" + table['INDDESC'] + "</td>")
+		raw("<td>" + table['ACTUAL'] + "</td>")
+		raw("<td>" + table['FORCAST'] + "</td>")
+		raw("<td>" + table['PREVIOUS'] + "</td>")
+		raw("<td>" + table['PERIOD'] + "</td>")
+		raw("<td>" + table['SOURCELINK'] + "</td>")
+		raw("<td>" + table['EVENTSUBTYP'] + "</td>")
+		raw("<td>" + table['CURRNCY'] + "</td>")
+		raw("<td>" + table['COUNTRYFLAG'] + "</td>")
+		raw("</tr>")
+	end
+
+	raw("</table>")
+%>
 </center>
