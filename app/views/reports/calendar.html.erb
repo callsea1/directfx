@@ -29,10 +29,12 @@
 			%>
 			
 			<form action=''><select>
-			<%
+			<%=
+			page = ''
 			dates.each do |date|
-				raw("<option value='#{date}'>#{date}</option>")
+				page += "<option value='#{date}'>#{date}</option>"
 			end
+			page.html_safe
 			%>
 
 			</select>
@@ -59,31 +61,33 @@
 				<th>Currency Name</th>
 				<th>Country Flag</th>
 			
-<%
+<%=
+	newTbl = ''
 	docElem['Table'].each do |table|
-		raw("<tr>")
-		raw("<td>" + table['M008CODE'] + "</td>")
-		raw("<td>" + table['REDATE'] + "</td>")
-		raw("<td>" + table['RETIME'] + "</td>")
-		raw("<td>" + table['DATECOL2'] + "</td>")
-		raw("<td>" + table['COUNTRY'] + "</td>")
-		raw("<td>" + table['FREQUENCY'] + "</td>")
-		raw("<td>" + table['RELEVANCE'] + "</td>")
-		raw("<td>" + table['INDNAME'] + "</td>")
-		raw("<td>" + table['INDTYPE'] + "</td>")
-		raw("<td>" + table['INDSOURCE'] + "</td>")
-		raw("<td>" + table['INDDESC'] + "</td>")
-		raw("<td>" + table['ACTUAL'] + "</td>")
-		raw("<td>" + table['FORCAST'] + "</td>")
-		raw("<td>" + table['PREVIOUS'] + "</td>")
-		raw("<td>" + table['PERIOD'] + "</td>")
-		raw("<td>" + table['SOURCELINK'] + "</td>")
-		raw("<td>" + table['EVENTSUBTYP'] + "</td>")
-		raw("<td>" + table['CURRNCY'] + "</td>")
-		raw("<td>" + table['COUNTRYFLAG'] + "</td>")
-		raw("</tr>")
+		newTbl += "<tr>"
+		newTbl += "<td>" + table['M008CODE'] + "</td>"
+		newTbl += "<td>" + table['REDATE'] + "</td>"
+		newTbl += "<td>" + table['RETIME'] + "</td>"
+		newTbl += "<td>" + table['DATECOL2'] + "</td>"
+		newTbl += "<td>" + table['COUNTRY'] + "</td>"
+		newTbl += "<td>" + table['FREQUENCY'] + "</td>"
+		newTbl += "<td>" + table['RELEVANCE'] + "</td>"
+		newTbl += "<td>" + table['INDNAME'] + "</td>"
+		newTbl += "<td>" + table['INDTYPE'] + "</td>"
+		newTbl += "<td>" + table['INDSOURCE'] + "</td>"
+		newTbl += "<td>" + table['INDDESC'] + "</td>"
+		newTbl += "<td>" + table['ACTUAL'] + "</td>"
+		newTbl += "<td>" + table['FORCAST'] + "</td>"
+		newTbl += "<td>" + table['PREVIOUS'] + "</td>"
+		newTbl += "<td>" + table['PERIOD'] + "</td>"
+		newTbl += "<td>" + table['SOURCELINK'] + "</td>"
+		newTbl += "<td>" + table['EVENTSUBTYP'] + "</td>"
+		newTbl += "<td>" + table['CURRNCY'] + "</td>"
+		newTbl += "<td>" + table['COUNTRYFLAG'] + "</td>"
+		newTbl += "</tr>"
 	end
 
-	raw("</table>")
+	newTbl += "</table>"
+	newTbl.html_safe
 %>
 </center>
