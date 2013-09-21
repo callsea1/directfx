@@ -10,10 +10,15 @@
 
 	docElem = XmlSimple.xml_in(feed, {'ForceArray' => false}) %>
 
+			<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+			<script src="//raymperry.com/jquery.cf.popover.min.js"></script>
+			<script src="//raymperry.com/jquery.ui.position.min.js"></script>-->
+			<br/>
 			<style type='text/css'>
+				table {background-color:#fff;color:#000;}
 				th {
 					background-color:#999;
-					color:#000;
 					padding-left: 10px;
 					padding-right: 10px;
 				}
@@ -42,6 +47,28 @@
 			</select>
 
 			<input type='checkbox' value='weekly' />Weekly</form>
+
+			<%= time_zone_select( "user", 'time_zone', ActiveSupport::TimeZone.us_zones, :default => "Pacific Time (US & Canada)") %>
+
+			<div id="moreInfoPopup" style="
+				position:absolute;
+				left:50%;
+				top:50%;
+				background-color:#fff;
+				border-style:solid;
+				border-width:5px;
+				border-color:#000;
+				width: 250px;
+				height:250px;
+				margin-left: -125px;
+				margin-top: -125px;">
+
+				<a id="closePop" href='#'>Close window</a>
+
+
+			</div>
+
+
 			<table>
 				<th>Serial Number</th>
 				<th>Release Date</th>
@@ -65,7 +92,9 @@
 			
 <%=
 	newTbl = ''
+	count = 0
 	docElem['Table'].each do |table|
+		count +=1
 		newTbl += "<tr>"
 		newTbl += "<td>" + table['M008CODE'] + "</td>"
 		newTbl += "<td>" + table['REDATE'] + "</td>"
@@ -74,10 +103,10 @@
 		newTbl += "<td>" + table['COUNTRY'] + "</td>"
 		newTbl += "<td>" + table['FREQUENCY'] + "</td>"
 		newTbl += "<td>" + table['RELEVANCE'] + "</td>"
-		newTbl += "<td>" + table['INDNAME'] + "</td>"
+		newTbl += "<td><a class='moreInfoTog' href=# id='mi#{count}'>" + table['INDNAME'] + "</a></td>"
 		newTbl += "<td>" + table['INDTYPE'] + "</td>"
 		newTbl += "<td>" + table['INDSOURCE'] + "</td>"
-		newTbl += "<td>" + table['INDDESC'] + "</td>"
+		newTbl += "<td><div class='moreInfo' id='mi#{count}'>" + table['INDDESC'] + "</div></td>"
 		newTbl += "<td>" + table['ACTUAL'] + "</td>"
 		newTbl += "<td>" + table['FORCAST'] + "</td>"
 		newTbl += "<td>" + table['PREVIOUS'] + "</td>"
