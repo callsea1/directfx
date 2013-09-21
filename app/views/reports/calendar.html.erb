@@ -51,7 +51,8 @@
 			<%= time_zone_select( "user", 'time_zone', ActiveSupport::TimeZone.us_zones, :default => "Pacific Time (US & Canada)") %>
 
 			<div id="moreInfoPopup" style="
-				position:absolute;
+				display:none;
+				position:fixed;
 				left:50%;
 				top:50%;
 				background-color:#fff;
@@ -62,6 +63,9 @@
 				height:250px;
 				margin-left: -125px;
 				margin-top: -125px;">
+
+
+				<p id="moreInfoPopupText"></p>
 
 				<a id="closePop" href='#'>Close window</a>
 
@@ -94,27 +98,27 @@
 	newTbl = ''
 	count = 0
 	docElem['Table'].each do |table|
-		count +=1
-		newTbl += "<tr>"
-		newTbl += "<td>" + table['M008CODE'] + "</td>"
-		newTbl += "<td>" + table['REDATE'] + "</td>"
-		newTbl += "<td>" + table['RETIME'] + "</td>"
-		newTbl += "<td>" + table['DATECOL2'] + "</td>"
-		newTbl += "<td>" + table['COUNTRY'] + "</td>"
-		newTbl += "<td>" + table['FREQUENCY'] + "</td>"
-		newTbl += "<td>" + table['RELEVANCE'] + "</td>"
-		newTbl += "<td><a class='moreInfoTog' href=# id='mi#{count}'>" + table['INDNAME'] + "</a></td>"
-		newTbl += "<td>" + table['INDTYPE'] + "</td>"
-		newTbl += "<td>" + table['INDSOURCE'] + "</td>"
-		newTbl += "<td><div class='moreInfo' id='mi#{count}'>" + table['INDDESC'] + "</div></td>"
-		newTbl += "<td>" + table['ACTUAL'] + "</td>"
-		newTbl += "<td>" + table['FORCAST'] + "</td>"
-		newTbl += "<td>" + table['PREVIOUS'] + "</td>"
-		newTbl += "<td>" + table['PERIOD'] + "</td>"
-		newTbl += "<td>" + table['SOURCELINK'] + "</td>"
-		newTbl += "<td>" + table['EVENTSUBTYP'] + "</td>"
-		newTbl += "<td>" + table['CURRNCY'] + "</td>"
-		newTbl += "<td>" + table['COUNTRYFLAG'] + "</td>"
+		count += 1
+		newTbl += "<tr id='elem#{count}'>"
+		newTbl += "<td data-id='M008CODE'>" + table['M008CODE'] + "</td>"
+		newTbl += "<td data-id='REDATE'>" + table['REDATE'] + "</td>"
+		newTbl += "<td data-id='RETIME'>" + table['RETIME'] + "</td>"
+		newTbl += "<td data-id='DATECOL2'>" + table['DATECOL2'] + "</td>"
+		newTbl += "<td data-id='COUNTRY'>" + table['COUNTRY'] + "</td>"
+		newTbl += "<td data-id='FREQUENCY'>" + table['FREQUENCY'] + "</td>"
+		newTbl += "<td data-id='RELEVANCE'>" + table['RELEVANCE'] + "</td>"
+		newTbl += "<td data-id='INDNAME'><a class='moreInfoTog' href=#>" + table['INDNAME'] + "</a></td>"
+		newTbl += "<td data-id='INDTYPE'>" + table['INDTYPE'] + "</td>"
+		newTbl += "<td data-id='INDSOURCE'>" + table['INDSOURCE'] + "</td>"
+		newTbl += "<td data-id='INDDESC'>" + table['INDDESC'] + "</td>"
+		newTbl += "<td data-id='ACTUAL'>" + table['ACTUAL'] + "</td>"
+		newTbl += "<td data-id='FORCAST'>" + table['FORCAST'] + "</td>"
+		newTbl += "<td data-id='PREVIOUS'>" + table['PREVIOUS'] + "</td>"
+		newTbl += "<td data-id='PERIOD'>" + table['PERIOD'] + "</td>"
+		newTbl += "<td data-id='SOURCELINK'>" + table['SOURCELINK'] + "</td>"
+		newTbl += "<td data-id='EVENTSUBTYP'>" + table['EVENTSUBTYP'] + "</td>"
+		newTbl += "<td data-id='CURRNCY'>" + table['CURRNCY'] + "</td>"
+		newTbl += "<td data-id='COUNTRYFLAG'>" + table['COUNTRYFLAG'] + "</td>"
 		newTbl += "</tr>"
 	end
 
