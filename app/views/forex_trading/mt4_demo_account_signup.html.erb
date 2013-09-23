@@ -1,0 +1,126 @@
+<div class="page_title"></div><!-- red stripe --> 
+
+  
+<!-- Contant -->
+
+<div class="container">
+
+	<div class="content_fullwidth">
+    
+<div class="big_text1"><i>Forex Trading</i></div>
+
+
+
+        <div class="one_half">
+        <h6>FS Liscense</h6>
+        <p>Auto-trading just got a whole lot better. The Currensee Trade Leaders™ Investment Program is the unique auto-trading service that delivers an elite network of emerging foreign exchange managers, called Trade Leaders. Once you open and fund your account, you simply choose the Trade Leaders you want to follow by adding them to your portfolio. By joining the program, you leverage sophisticated technology that replicates the trades of a Trade Leader in your account in real-time, regardless of where you are in the world.</p>
+
+		<p> The Currensee Trade Leaders Investment Program is different from many of the other auto trading services out there and here’s why.</p> 
+		<p> <%= image_tag "currensee.png", :class => 'currensee' %> </p>
+
+
+
+        </div>
+        
+        <div class="one_half last">
+        <h6>Segregated Client Funds</h6>
+
+        <ul class="list5" style="padding-left: 28px;">
+
+			<li><strong>No hypothetical performance</strong> – real traders, real live accounts, real results. </li>
+			<li><strong>An elite network of emerging managers</strong> – Currensee handpicks only the highest caliber Forex traders to be Trade Leaders.</li>
+			<li><strong>Rigorous due diligence</strong>– Trade Leaders must pass an extensive review process in order to make it onto the Trade Leaderboard.</li>
+			<li><strong>Expert trade replication</strong>– No trade signals to try and follow. Once you allocate to your Trade Leaders, their trades are automatically replicated in your account.</li>
+			<li><strong>Risk management</strong> – Real-time product features enable leverage and draw down adjustments by Trade Leader. Provides detailed controls to help manage risk.</li>
+			<li><strong>Full transparency and control</strong> – add or delete Trade Leaders at any time, see performance metrics and adjust Trade Leader allocations, all in real-time.</li>
+
+		</ul>
+
+        </div>
+         <div class="one_half">
+Currensee monitors Trade Leaders on an ongoing basis for performance and risk management. Finding great Trade Leaders is one thing. Ensuring they are performing for you is our ongoing mission. You can see the performance of Trade Leaders versus the S&amp;P and other indices by viewing the latest Currensee Trade Leaders Performance Sheet. </div>
+
+         	 <div class="one_half last">
+         	<div id="currensee_wrapper">
+				<object id="currensee_video" data="http://www.youtube.com/embed/PEbtYEqkeW4" type="text/html">
+				Your browser does not support video
+				</object>
+
+			</div>
+		</div>
+
+
+
+
+         <div class="mar_top2"></div>
+        
+
+
+        
+
+        <div class="content_fullwidth">
+
+        	<h5 align="center"> Trade Leader Program Sign Up</h5>
+
+						<div class="comment_form" >
+
+						<%= form_tag url_for("https://mpmarketing.infusionsoft.com/app/form/process/57173b5ad5402188385cb1fb8f0ba4de"), {:method => :post} do %>
+
+								<%= hidden_field_tag("inf_form_xid", "57173b5ad5402188385cb1fb8f0ba4de") %>
+								<%= hidden_field_tag("inf_form_name", "Trade Leader Program") %>
+								<%= hidden_field_tag("infusionsoft_version", "1.29.5.41") %>
+
+								
+								<div class="comment_input_bg_wrapper"><%= text_field_tag 'inf_field_FirstName', nil, :placeholder => 'First Name', :class => "comment_input_bg"  %></div>
+
+								
+								<div class="comment_input_bg_wrapper"><%= text_field_tag 'inf_field_Email', nil, :placeholder => 'Email', :class => "comment_input_bg"   %></div>
+
+
+								<div class="comment_input_bg_wrapper"><%= text_field_tag 'inf_field_Phone1', nil, :placeholder => 'Phone', :class => "comment_input_bg"   %></div>
+
+								
+								<div class="comment_input_bg_wrapper"><%= text_field_tag 'inf_field_StreetAddress1', 'Street Address', :class => "comment_input_bg"   %></div>
+
+								<div class="comment_input_bg_wrapper"><%= text_field_tag 'inf_field_City', nil, :placeholder => 'City', :class => "comment_input_bg"   %></div>
+
+								
+								<div class="comment_input_bg_wrapper"><%= text_field_tag 'inf_field_State', nil, :placeholder => 'State', :class => "comment_input_bg" %></div>
+
+								
+								<div class="comment_input_bg_wrapper"><%= text_field_tag 'inf_field_PostalCode', nil, :placeholder => 'Postal Code', :class => "comment_input_bg"   %></div>
+
+								
+								<%= country_select('inf_field_Country', 'Country', [ "Australia", "Great Britain", "France", "Germany" ]) %></br>
+
+								<div class="comment_submit_wrapper"><%= submit_tag "Sign up now!", :class => "comment_submit"%></div>
+								<% end %>
+						</div>
+			 </div>
+		        
+   <div class="clearfix divider_line2"></div>
+
+
+		    
+
+<div id="currenseeiframe" align="center">
+	   <%= link_to "Currensee Trade Leaders ™ VS. the S&amp;P Performance Sheet".html_safe, "http://www.currensee.com/files/CurrenseeTradeLeadersInvestmentProgram.pdf"  %>
+<h3 style="padding-top:10px;">Trade Leaders - Performance</h3>
+<iframe src="http://www.currensee.com/custom/partner/leaderboarddirectfx.php" height="400" width="910" scrolling="yes"></iframe>
+</div>
+<p style="font-size: x-small;">Risk Warning:</p>
+<p style="font-size: x-small;">Please note that over the counter retail foreign currency (Forex) trading may involve significant risk of loss. It is not suitable for all investors and you should make sure you understand the risks involved before trading, and seek independent advice if necessary. Trade Leader past performance is not necessarily indicative of future results. Investor returns may vary materially from Trade Leader returns based on slippage, fees, broker spreads, volatility or other market conditions. If you place additional trades in your account or you modify or cancel an order generated by your program you may achieve a materially different result than the Trade Leader(s) that you follow. Your trading program will follow the same leverage of each Trade Leader whose signals you have incorporated into your program; and that leverage can vary by Trade Leader and by trade. By increasing or decreasing the amount of capital you allocate to follow the signals of a particular Trade Leader, you may achieve materially different profits or losses than the Trade Leader and you may be increasing or decreasing the risk of your program.</p>
+
+			</div>
+
+</div><!-- end main content area -->
+
+<div class="mar_top5"></div>
+
+
+
+
+<!-- Below this line is the content I need to replace the above placeholder with -->
+
+
+

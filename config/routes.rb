@@ -14,6 +14,10 @@ DirectfxRails::Application.routes.draw do
    get '/economic_calendar' => 'reports#calendar', as: :economic_calendar
 
    get '/forex_trading' => 'forex_trading#show', as: :forex_trading
+   get '/mt4_live_account_signup' => 'forex_trading#mt4_live_account_signup', as: :mt4_live_account_signup
+   get '/mt4_demo_account_signup' => 'forex_trading#mt4_demo_account_signup', as: :mt4_demo_account_signup
+
+   get '/binary_options' => 'binary_options#show', as: :binary_options
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

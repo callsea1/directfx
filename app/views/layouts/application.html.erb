@@ -98,7 +98,23 @@
                         
                             <ul>
                                 <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
-                                <li><a href="elements.html">Trading Tools</a></li> 
+                                <li><a href="elements.html">Trading Tools</a>
+                                    <ul>
+                                         <li><%= link_to "MT4", "#" %>
+                                            <ul>
+                                                 <li><%= link_to "MT4 Demo Account", mt4_demo_account_signup_url %></li> <!-- do this -->
+                                                 <li><%= link_to "MT4 Live Account", mt4_live_account_signup_url %></li> <!-- do this -->
+                                            </ul></li>
+                                        <li><%= link_to "G3", "#" %>
+                                            <ul>
+                                                 <li><%= link_to "G3 Demo Account", mt4_demo_account_signup_url %></li>
+                                                 <li><%= link_to "G3 Live Account", mt4_live_account_signup_url %></li>
+                                            </ul></li>
+
+                                    
+
+                                    </ul></li>
+                                
                             </ul>
                             
                         </li>
@@ -111,7 +127,7 @@
                             </ul>
                         </li>
                         
-                        <li><a href="#">Binary Options</a>
+                        <li><%= link_to "Binary Options", binary_options_url %> <!-- do this -->
                         
                             <ul>
                                 <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
