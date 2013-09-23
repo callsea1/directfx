@@ -2008,6 +2008,9 @@ ul.post_meta_links_small {
 .comment_submit_wrapper{
 	padding-left: 200px; padding-top: 10px; padding-bottom:10px;
 }
+.comment_submit_wrapper_left{
+	padding-left: 0px; padding-top: 10px; padding-bottom:10px;
+}
 .comment_submit {
 	background-color: #eee;
 	border: 1px solid #ddd;
