@@ -1,0 +1,2 @@
+class BinaryOptionsController < ApplicationController
+end

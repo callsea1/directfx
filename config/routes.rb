@@ -13,7 +13,17 @@ DirectfxRails::Application.routes.draw do
    get '/reports/weekly' => 'reports#weekly', as: :weekly_report
    get '/economic_calendar' => 'reports#calendar', as: :economic_calendar
 
-   get '/forex_trading' => 'forex_trading#show', as: :forex_trading
+   get '/currensee' => 'forex_trading#currensee', as: :currensee
+   get '/mt4_live_account_signup' => 'forex_trading#mt4_live_account_signup', as: :mt4_live_account_signup
+   get '/mt4_cash_bonus' => 'forex_trading#mt4_live_bonus', as: :mt4_live_bonus
+   get '/mt4_demo_account_signup' => 'forex_trading#mt4_demo_account_signup', as: :mt4_demo_account_signup
+
+   get '/binary_options' => 'binary_options#show', as: :binary_options
+
+   get "download_pdf" => 'forex_trading#download_pdf', :as => :download_pdf
+
+
+  
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

@@ -1,0 +1,2 @@
+module BinaryOptionsHelper
+end

@@ -73,7 +73,7 @@
     
     	<div class="container">
 
-    		<div class="one_fourth"><div id="logo"><h1><%=link_to "direct<i>FX</i>.com".html_safe, root_path %></h1></div></div><!-- end logo -->
+    		<div class="one_fourth"><div id="logo"><%= link_to( image_tag('directfx_logo.png'), root_url) %></div></div><!-- end logo -->
             	
             <div class="three_fourth last">
                
@@ -83,35 +83,71 @@
                     
                     <ul id="tiny">
                     
-                        <li><%= link_to "Who We Are", who_url %>
+                        <li><%= link_to "Who We Are",  '#'%>
                             <!-- <a href="index.html" class="active">Who We Are</a> -->
                         
                             <ul> 
                                 <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
+                                <li><%= link_to "About Us", who_url %></li>
                                 <li><%= link_to "Regulations", regulation_url %></li>
                                 <li><%= link_to "Press Releases", press_release_url %></li>
 
                             </ul>
                          </li>  
                         
-                        <li><%= link_to "Forex Trading", forex_trading_url %>
+                        <li><%= link_to "Products", '#' %>
                         
                             <ul>
                                 <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
-                                <li><a href="elements.html">Trading Tools</a></li> 
+                                <li><%= link_to "Forex", '#' %></li>
+                                <li><%= link_to "Metals", '#' %></li>
+                                <li><%= link_to "Binary Options", binary_options_url %></li>
+                                <li><%= link_to "CFD", '#' %></li>
+                                <li><%= link_to "Futures", '#' %></li>
+                            </ul>
+                            
+                        </li>
+
+                        <li><%= link_to "Platforms", '#' %>
+                        
+                            <ul>
+                                <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
+                                <li> <%= link_to "MetaTrader 4", '#' %>
+                                            <ul>
+                                                 <li><%= link_to "MT4 Demo Account", mt4_demo_account_signup_url %></li>
+                                                 <li><%= link_to "MT4 Live Account", mt4_live_account_signup_url %></li>
+                                            </ul>
+                                   
+                                </li>
+                                <li><%= link_to 'Liquidity Direct', '#' %>
+                                            <ul>
+                                                 <li><%= link_to "LD Demo Account", '#' %></li>
+                                                 <li><%= link_to "LD Live Account", '#' %></li>
+                                            </ul>
+                                   
+
+                                </li>
+                                <li><%= link_to 'Currensee', currensee_url %>
+                                   
+
+                                </li>
                             </ul>
                             
                         </li>
                         
-                        <li><a href="#">CFDS</a>
+                        <li><a href="#">Resource Center</a>
                         
                             <ul>
                                 <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
+                                <li><%= link_to "Economic Calendar", economic_calendar_url %></li>
+                                <li><%= link_to "Daily Market Report", daily_report_url %></li>
+                                <li><%= link_to "Weekly Market Report", weekly_report_url %></li>
+                                <li><%= link_to "Subscribe", '#' %></li>
 
                             </ul>
                         </li>
                         
-                        <li><a href="#">Binary Options</a>
+                        <li><%= link_to "Funding", '#' %> <!-- do this -->
                         
                             <ul>
                                 <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
