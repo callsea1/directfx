@@ -411,6 +411,7 @@ a.show_hide{
 
 .top_section #logo {
 	background: none;
+	padding-left: 168px;
 }
 #logo h1 {
 	float: none;
@@ -994,6 +995,8 @@ a.show_hide{
 
 .top_section #logo {
 	background: none;
+	padding-left: 88px;
+	padding-bottom: -10px;
 }
 #logo h1 {
 	float: none;
@@ -1016,7 +1019,14 @@ a.show_hide{
 }
 
 .top_section {
-	height: 130px;
+	height: 150px;
+
+}
+
+/*add padding to mobile view title at top*/
+.big_text1{
+	padding-top: 24px;
+	margin-left: 36px;
 }
 
 .button_slider, .button_slider_02 {

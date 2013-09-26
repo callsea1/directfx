@@ -4,10 +4,10 @@
 /* ----------- Logo ----------- */
 #logo {
 	float: left;
-	padding: 0px;
+	padding: 24px 0 5px 12px;
 	margin: 0px 0px 0px 0px;
-	background: url(logo-bg.png) no-repeat right top;
-	width: 100%;
+	/*background: url(directfx_logo.png) no-repeat right top;*/
+	width: 228px;
 	height: 80px;
 }
 #logo h1 {
@@ -1582,6 +1582,23 @@ ul.small_social_links {
 }
 .portfolio_image img:hover {
 	opacity: 1;
+}
+
+/*Mt4 live acocunt page image style*/
+.cash_wrapper{
+	margin-left: 140px;
+	margin-right: 100px;
+	margin-bottom: 18px;
+    width:42%;
+	height:42%;
+	padding: 1px 1px 1px 1px;
+
+}
+img.mt4{
+	padding: 1px 1px 1px 1px;
+
+
+
 }
 
 

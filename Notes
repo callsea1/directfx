@@ -58,8 +58,12 @@ Trading tools
 Top priority!:
 - Add buttons to home page
 
-mt4-live-account-signup -- in infusionsoft: direct fx live
+mt4-live-account-signup -- in infusionsoft: direct fx live  -- this redirects to http://www.directfx.com/en/account-selection-2
 mt4-demo-account-signup/ -- in infusionsoft: direct fx demo
 binary-options/ + mt4-binary-demo-account-signup/ -- in infusionsoft: DIRECT FX Binary Options
+
+infusionsoft -> legacy -> forms
+
+
 
 
