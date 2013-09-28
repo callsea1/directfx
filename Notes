@@ -64,6 +64,15 @@ binary-options/ + mt4-binary-demo-account-signup/ -- in infusionsoft: DIRECT FX 
 
 infusionsoft -> legacy -> forms
 
+-------
+call with ajay and calendar folks 9/27
+
+http://ecal.decimalpointanalytics.info/getdata.aspx?viewtype=1&date=20-Sep-2013&country=0&impact=0&timezone=0
+
+2nd url sent: pass in the event code
+http://ecal.decimalpointanalytics.info/directFxHistoryXML.aspx?M008CODE=280486
+
+This will only work from our railsfx.herokuapp.com server
 
 
 

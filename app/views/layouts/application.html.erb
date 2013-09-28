@@ -4,7 +4,7 @@
 <!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><html lang="en-gb" class="no-js"-->
 <head>
-  <title><%= @title %></title>
+  <title><%= title %></title>  <!--- this is a function defined in the ApplicationHelper -->
     
 	
     <meta name="keywords" content="FX,trading,options,calls,puts,australlia,broker" />
@@ -162,7 +162,13 @@
                             </ul>
                         </li>
                         
-                        <li class="last"><a href="#" >Contact</a></li>
+                        <li class="last"><a href="#" >Contact</a>
+                                                        <ul>
+                                <li><a href="#" class="arrow"><%= image_tag("menu-drop-arrow.png", class: "arrow") %></a></li>
+                                <li><%= link_to "Get In Touch", contact_url %></li>
+                            </ul>
+
+                        </li>
 
                     
                         

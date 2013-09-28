@@ -4,6 +4,7 @@ DirectfxRails::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root 'site#index'
+   get '/get_in_touch' => 'site#contact', as: :contact
 
    get '/who_we_are' => 'who_we_are#show', as: :who
    get '/regulation' => 'who_we_are#regulation', as: :regulation
