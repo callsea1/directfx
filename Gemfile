@@ -49,5 +49,7 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'xml-simple', '>= 1.1.2'
-gem 'erubis', '>= 2.7.0'
+gem 'nokogiri'
 gem "open-uri-cached", "~> 0.0.5"
+gem 'addressable'
+

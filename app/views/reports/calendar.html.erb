@@ -1,12 +1,13 @@
 <center>
 <%
 	require 'open-uri/cached'
-	require 'erubis'
+	require 'nokogiri'
  	require 'xmlsimple'
+ 	require 'addressable/uri'
+ 	require 'cgi'
 
-
-	feed = open("http://raymperry.com/Ecal%20XMLSample.xml")
-	# feed = open("http://ecal.decimalpointanalytics.info/directfxxml.aspx")
+	# feed = open("http://raymperry.com/Ecal%20XMLSample.xml")
+	feed = Nokogiri::XML(open('http://www.google.com/search?q=sparklemotion'))
 
 	docElem = XmlSimple.xml_in(feed, {'ForceArray' => false}) %>
 
@@ -38,6 +39,11 @@
 		%>
 		
 		<form action=''><select>
+		<p><%=
+		uri = Addressable::URI.parse("http://example.com/path/to/resource/")
+		uri.path
+		%></p>
+
 		<%=
 		page = ''
 		dates.each do |date|
