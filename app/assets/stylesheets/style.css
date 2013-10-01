@@ -3873,6 +3873,7 @@ a.but_rightarrow:hover {
 	background: url(h-multy-lines2.jpg) repeat-x left top;
 }
 
+/*About page */
 
 .box_widget_full {
 	float: left;
@@ -3941,4 +3942,24 @@ li.ef-icon2 {
 .about_image{
 	width:50%;
 	height:50%;
+}
+
+/*Contact Page */
+
+li.ef-icon3 {
+	display: block;
+	margin-bottom: 0.3em;
+	width: 62px;
+	height: 66px;
+	background-image: url(icons/icn-12.svg); /* - briefcase */
+	background-repeat: no-repeat;
+	margin-left: 100px;
+	border-radius: 50%;
+}
+
+.fullimage_box3:hover .ef-icon3 {
+    background-color: #FF0000;
+    transition: background-color 0ms linear;
+    background-position: -82px 0px;
+    transition: background-position 0ms linear;
 }
