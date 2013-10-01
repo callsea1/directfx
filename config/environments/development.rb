@@ -1,6 +1,5 @@
 DirectfxRails::Application.configure do
-      require 'net/http' # xml parsing
-    require 'XmlSimple'
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on

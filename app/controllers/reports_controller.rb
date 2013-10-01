@@ -13,15 +13,19 @@ class ReportsController < ApplicationController
 	end
 
 	def calendar
-		@url = URI.parse('http://ecal.decimalpointanalytics.info/getdata.aspx?viewtype=1&date=20-Sep-2013&country=0&impact=0&timezone=0')
+		#@url = URI.parse('http://ecal.decimalpointanalytics.info/getdata.aspx?viewtype=1&date=20-Sep-2013&country=0&impact=0&timezone=0')
 
 		#@res = Net::HTTP.get_response(URI('http://ecal.decimalpointanalytics.info/getdata.aspx?viewtype=1&date=20-Sep-2013&country=0&impact=0&timezone=0'))
 	
 
 		url = 'http://www.engadget.com/rss.xml'
-		xml_data = Net::HTTP.get_response(URI.parse(url)).body
+		#url = 'http://ecal.decimalpointanalytics.info/getdata.aspx?viewtype=1&date=20-Sep-2013&country=0&impact=0&timezone=0'
+		#xml_data = Net::HTTP.get_response(URI.parse(url)).body
 
-		@data = XmlSimple.xml_in(xml_data)
+		response = HTTParty.get(url)
+		@data = response.parsed_response
+
+		#@data = XmlSimple.xml_in(xml_data)
 
 
 
