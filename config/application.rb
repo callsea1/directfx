@@ -1,8 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-require 'net/http' # xml parsing
-require 'XmlSimple'
+
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -10,6 +9,8 @@ Bundler.require(:default, Rails.env)
 
 module DirectfxRails
   class Application < Rails::Application
+    require 'net/http' # xml parsing
+    require 'XmlSimple'
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
