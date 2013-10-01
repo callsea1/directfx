@@ -53,4 +53,5 @@ gem 'xml-simple', '>= 1.1.2'
 gem "open-uri-cached", "~> 0.0.5"
 #gem 'addressable'
 #gem 'net/http'
+gem 'rails_12factor', group: :production
 
