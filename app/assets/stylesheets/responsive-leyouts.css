@@ -1,5 +1,53 @@
 /* Responsive CSS Styles Table of Contents */
 
+@media only screen and (min-width: 1231px){
+
+
+/*contact item on navbar - to make it fold out from right to left (mirrored of what others do)*/
+#access .menu ul li ul li a.sparrow {
+	margin: 0;
+	border: none;
+	display: block;
+	padding: 0px;
+	height: 1px;
+	background:  no-repeat left top;
+}
+
+#access .menu ul li ul li a.sparrow img {
+	position: absolute;
+	top: -13px;
+	left: 20px;
+}
+
+/* end -- contact item on navbar*/
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1230px){
+
+
+/*contact item on navbar - to make it fold out from right to left (mirrored of what others do)*/
+#access .menu ul li ul li a.sparrow {
+	margin: 0;
+	border: none;
+	display: block;
+	padding: 0px;
+	height: 1px;
+	background:  no-repeat left top;
+}
+
+#access .menu ul li ul li a.sparrow img {
+	position: absolute;
+	top: -13px;
+	left: 140px;
+}
+
+/* end -- contact item on navbar*/
+
+}
+
 
 @media only screen and (min-width: 1000px){}
 @media only screen and (min-width: 768px) and (max-width: 999px){
@@ -21,6 +69,21 @@
 }
 
 
+/*contact buttons*/
+li.contact_button1{
+
+}
+li.contact_button2{
+
+}
+
+a.but_question_mark{
+}
+
+a.but_chat{
+}
+
+/*end contact button*/
 
 
 /*change padding for image in lower view*/
@@ -1535,5 +1598,19 @@ a.show_hide{
 .tci_list_left li {
 	margin: 0px 0px 0px 2px;
 }
+
+/*contact buttons large view*/
+li.contact_button1{
+	padding-bottom: 35px;
+	margin-left: 0px;
+	display: block;
+
+}
+li.contact_button2{
+	padding: 0 0;
+	margin-left: 0px;
+	display: block;
+}
+/*end contact button*/
 
 }

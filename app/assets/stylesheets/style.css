@@ -2617,11 +2617,12 @@ a.but_settings:hover {
 a.but_chat {
 	padding: 10px 22px 10px 45px;
 	margin: 0px 0px 0px 0px;
-	background: #7f9919 url(elements/chat.png) no-repeat 16px 13px;
+	background: #4c99e5 url(elements/chat.png) no-repeat 16px 13px;
 	border-bottom: 1px solid #909090;
 }
 a.but_chat:hover {
-	background-color: #8aa61b;
+	background-color: #5da3e7;
+	color: #fff;
 }
 
 a.but_play_button {
@@ -2687,12 +2688,27 @@ a.but_info:hover {
 a.but_question_mark {
 	padding: 10px 22px 10px 40px;
 	margin: 0px 0px 0px 0px;
-	background: #4c0019 url(elements/question_mark.png) no-repeat 16px 12px;
+	background: #FF0000 url(elements/question_mark.png) no-repeat 16px 12px;
 	border-bottom: 1px solid #909090;
 }
 a.but_question_mark:hover {
-	background-color: #620020;
+	background-color: #ff3232;
+	color: #fff;
 }
+
+
+/*contact buttons large view*/
+li.contact_button1{
+	padding: 0 0;
+	margin-left: 0px;
+	display: inline;
+}
+li.contact_button2{
+	padding: 0 0;
+	margin-left: 0px;
+	display: inline;
+}
+/*end contact button*/
 
 a.but_minus {
 	padding: 10px 22px 10px 40px;

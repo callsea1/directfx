@@ -1,5 +1,106 @@
-calendar page </br>
+<!-- {"M008CODE"=>"293061", "REDATE"=>"20-Sep-2013", "RETIME"=>"14:00:00", "DATECOL2"=>"20-Sep-2013 14:00:00", "COUNTRY"=>"Eurozone", "FREQUENCY"=>"Monthly", "RELEVANCE"=>"M", "INDNAME"=>"Consumer Confidence - (P)", "INDTYPE"=>"Economic", "INDSOURCE"=>"European Commission", "INDDESC"=>"Consumer Confidence, released by the European Commission, is the arithmetic average of the balances (in percentage points) of the answers to the questions on the financial situation of households, the general economic situation, unemployment expectations (with inverted sign) and savings, all over the next 12 months. Balances are seasonally adjusted.", "ACTUAL"=>nil, "PREVIOUS"=>"-15.60", "PERIOD"=>"Sep-2013", "SOURCELINK"=>"http://ec.europa.eu/index_en.htm", "EVENTSUBTYP"=>"Production and Business Activity", "CURRNCY"=>nil, "COUNTRYFLAG"=>"EU.jpg"} -->
 
-<%= @data %></br>
+
+
+<div style="background-color: #FFF;">
+<div class="clearfix" ></div>
+ 
+<div class="page_title">
+<!-- 
+	<div class="container">
+		<div class="title"><h1>Who We Are</h1></div>
+        <div class="pagenation"><a href="index.html">Home</a> <i>/</i> <a href="#">Pages</a> <i>/</i> Full Width Page</div>
+	</div>
+ --></div><!-- end page title --> 
+
+<div class="clearfix"></div>   
+ 
+
+<!-- Contant
+======================================= -->
+
+<div class="container">
+
+	<div class="content_fullwidth">
+    
+    <div class="one_full">
+    
+    <div class="big_text1"><i>Economic Calendar</i></div>
+   
+    <p><span class="dropcap3">E</span>njoy this fine calendar. </p>
+
+ 
+    <div class="clearfix divider_line2"></div>
+        
+
+<div class="table-style">
+<table class="table-list">
+<THEAD>
+	<th>M008CODE</th>
+	<th>REDATE</th>
+	<th>RETIME</th>
+	<th>DATECOL2</th>
+	<th>COUNTRY</th>
+	<th>FREQUENCY</th>
+	<th>RELEVANCE</th>
+	<th>INDNAME</th>
+	<th>INDTYPE</th>
+	<th>INDSOURCE</th>
+	<th>INDDESC</th>
+	<th>ACTUAL</th>
+	<th>FORCAST</th>
+	<th>PREVIOUS</th>
+	<th>PERIOD</th>
+	<th>SOURCELINK</th>
+	<th>EVENTSUBTYP</th>
+	<th>CURRNCY</th>
+	<th>COUNTRYFLAG</th>
+</THEAD>
+
+<% @data.each do |xml| %>
+<tr>
+	<td><%=  xml['M008CODE'] %></td>
+	<td><%=  xml['REDATE'] %></td>
+	<td><%=  xml['RETIME'] %></td>
+	<td><%=  xml['DATECOL2'] %></td>
+	<td><%=  xml['COUNTRY'] %></td>
+	<td><%=  xml['FREQUENCY'] %></td>
+	<td><%=  xml['RELEVANCE'] %></td>
+	<td><%=  xml['INDNAME'] %></td>
+	<td><%=  xml['INDTYPE'] %></td>
+	<td><%=  xml['INDSOURCE'] %></td>
+	<td><%=  xml['INDDESC'] %></td>
+	<td><%=  xml['ACTUAL'] %></td>
+	<td><%=  xml['FORCAST'] %></td>
+	<td><%=  xml['PREVIOUS'] %></td>
+	<td><%=  xml['PERIOD'] %></td>
+	<td><%=  xml['SOURCELINK'] %></td>
+	<td><%=  xml['EVENTSUBTYP'] %></td>
+	<td><%=  xml['CURRNCY'] %></td>
+	<td><%=  xml['COUNTRYFLAG'] %></td>
+</tr>
+<%end%>
+</table>
+
+</div>
+  
+    </div><!-- end section -->
+	
+    <div class="clearfix mar_top3"></div>
+
+
+
+</div>
+
+</div><!-- end main content area -->
+
+
+
+
+
+
+
+
+
 
 
