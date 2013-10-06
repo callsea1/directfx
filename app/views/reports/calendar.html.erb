@@ -27,57 +27,59 @@
     
     <div class="big_text1"><i>Economic Calendar</i></div>
    
-    <p><span class="dropcap3">E</span>njoy this fine calendar. </p>
+    <p><span class="dropcap3">E</span>njoy this fine calendar.</p>
 
  
     <div class="clearfix divider_line2"></div>
+
+    <!-- Date	Time	Country		Event	Actual	Forecast	Previous -->
         
 
-<div class="table-style">
+<div class="table-econ">
 <table class="table-list">
 <THEAD>
-	<th>M008CODE</th>
+	<!-- <th>M008CODE</th> -->
 	<th>REDATE</th>
 	<th>RETIME</th>
-	<th>DATECOL2</th>
+<!-- 	<th>DATECOL2</th> -->
 	<th>COUNTRY</th>
-	<th>FREQUENCY</th>
-	<th>RELEVANCE</th>
-	<th>INDNAME</th>
-	<th>INDTYPE</th>
+<!-- 	<th>FREQUENCY</th>
+	<th>RELEVANCE</th> -->
+	<th>INDNAME</th> <!-- Event -->
+<!-- 	<th>INDTYPE</th>
 	<th>INDSOURCE</th>
-	<th>INDDESC</th>
+	<th>INDDESC</th> -->
 	<th>ACTUAL</th>
 	<th>FORCAST</th>
 	<th>PREVIOUS</th>
-	<th>PERIOD</th>
+	<!-- <th>PERIOD</th>
 	<th>SOURCELINK</th>
 	<th>EVENTSUBTYP</th>
 	<th>CURRNCY</th>
-	<th>COUNTRYFLAG</th>
+	<th>COUNTRYFLAG</th> -->
 </THEAD>
 
 <% @data.each do |xml| %>
 <tr>
-	<td><%=  xml['M008CODE'] %></td>
+	<!-- <td><%=  xml['M008CODE'] %></td> -->
 	<td><%=  xml['REDATE'] %></td>
 	<td><%=  xml['RETIME'] %></td>
-	<td><%=  xml['DATECOL2'] %></td>
+	<!-- <td><%=  xml['DATECOL2'] %></td> -->
 	<td><%=  xml['COUNTRY'] %></td>
-	<td><%=  xml['FREQUENCY'] %></td>
-	<td><%=  xml['RELEVANCE'] %></td>
+	<!-- <td><%=  xml['FREQUENCY'] %></td>
+	<td><%=  xml['RELEVANCE'] %></td> -->
 	<td><%=  xml['INDNAME'] %></td>
-	<td><%=  xml['INDTYPE'] %></td>
+	<!-- <td><%=  xml['INDTYPE'] %></td>
 	<td><%=  xml['INDSOURCE'] %></td>
-	<td><%=  xml['INDDESC'] %></td>
+	<td><%=  xml['INDDESC'] %></td> -->
 	<td><%=  xml['ACTUAL'] %></td>
 	<td><%=  xml['FORCAST'] %></td>
 	<td><%=  xml['PREVIOUS'] %></td>
-	<td><%=  xml['PERIOD'] %></td>
+	<!-- <td><%=  xml['PERIOD'] %></td>
 	<td><%=  xml['SOURCELINK'] %></td>
 	<td><%=  xml['EVENTSUBTYP'] %></td>
 	<td><%=  xml['CURRNCY'] %></td>
-	<td><%=  xml['COUNTRYFLAG'] %></td>
+	<td><%=  xml['COUNTRYFLAG'] %></td> -->
 </tr>
 <%end%>
 </table>
