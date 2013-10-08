@@ -10,6 +10,16 @@
 <div class="container_full" style="margin: -50px 0 0 0; padding-bottom:-50px;">
     
     <div class="fullwidthbanner-container">
+
+                                        <div id="clouds">
+                                <div class="cloud x1"></div>
+                                <!-- Time for multiple clouds to dance around -->
+                                <div class="cloud x2"></div>
+                                <div class="cloud x3"></div>
+                                <div class="cloud x4"></div>
+                                <div class="cloud x5"></div>
+                            </div>
+
     
 		<div class="fullwidthbanner">
         
@@ -108,13 +118,15 @@
 							</li> -->
                             
 							<!-- SLIDE 5 -->
-							<li data-transition="fade" data-slotamount="6" data-thumb="<% image_tag "slider-bg3.jpg" %>">
+							<li data-transition="fade" data-slotamount="6" >
 								
-                                <%= image_tag "slider-bg3.jpg" %>
 
 
                                 
-                                <div class="caption lft boxshadow" data-x="535" data-y="100" data-speed="900" data-start="700" data-easing="easeOutBack"><object data="http://www.youtube.com/embed/AGLNK5g6SXk?hd=1&amp;wmode=opaque&amp;controls=1&amp;showinfo=0" type="text/html" width="450" height="350"></object></div>
+                                <div class="caption lft boxshadow" data-x="480" data-y="130" data-speed="900" data-start="700" data-easing="easeOutBack">
+                                 <%= video_tag "http://techslides.com/demos/sample-videos/small.mp4", controls: true, autobuffer: true %>
+
+                                </div>
 
                                 <div class="caption lft big_white"  data-x="10" data-y="100" data-speed="900" data-start="1300" data-easing="easeOutExpo"></div>
 								<div class="caption lft large_text_two"  data-x="10" data-y="149" data-speed="900" data-start="1900" data-easing="easeOutExpo">We Are Forex</div>
