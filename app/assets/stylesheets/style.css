@@ -4014,7 +4014,7 @@ li.ef-icon3 {
 
 /*form validation*/
 
-* === Remove input autofocus webkit === */
+/* === Remove input autofocus webkit === */
 *:focus {outline: none;}
 
 /* === Form Typography === */
