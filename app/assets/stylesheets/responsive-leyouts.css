@@ -382,7 +382,7 @@ a.show_hide{
 #access .menu select {
 	border: 1px solid #e3e3e3;
 	border-top: 2px solid #e3e3e3;
-	padding: 9px 9px 9px 9px;
+	padding: 0;
 	background-color: #fff;
 	color: #333639;
 	width: 360px;
@@ -449,6 +449,7 @@ a.show_hide{
 .one_third {
 	width: 100%;
 	margin-bottom: 30px;
+	margin-left: 100px;
 }
 .one_fourth {
 	width: 100%;
@@ -474,7 +475,8 @@ a.show_hide{
 
 .top_section #logo {
 	background: none;
-	padding-left: 168px;
+	padding-left: 166px;
+	margin-bottom: -30px;
 }
 #logo h1 {
 	float: none;
@@ -963,6 +965,21 @@ a.show_hide{
 	width: auto;
 }
 
+/*binary options*/
+.bo_wrapper{
+	margin-left: 12px;
+	margin-right: 100px;
+	margin-bottom: 18px;
+	padding: 1px 1px 1px 1px;
+
+}
+
+/*title for each page*/
+.big_text1 {
+	padding-top: 30px;
+}
+
+
 }
 
 
@@ -1059,7 +1076,8 @@ a.show_hide{
 .top_section #logo {
 	background: none;
 	padding-left: 88px;
-	padding-bottom: -10px;
+	padding-bottom: 0px;
+	margin-bottom: -18px;
 }
 #logo h1 {
 	float: none;
@@ -1088,7 +1106,7 @@ a.show_hide{
 
 /*add padding to mobile view title at top*/
 .big_text1{
-	padding-top: 24px;
+	padding-top: 88px;
 	margin-left: 36px;
 }
 
@@ -1612,5 +1630,14 @@ li.contact_button2{
 	display: block;
 }
 /*end contact button*/
+
+/*binary option page*/
+.bo_wrapper{
+	margin-left: 0px;
+	margin-right: 100px;
+	margin-bottom: 18px;
+	padding: 1px 1px 1px 1px;
+
+}
 
 }

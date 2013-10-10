@@ -23,12 +23,11 @@ website:   	http://www.themepunch.com
 		width:100%;
 		position:relative;
 		padding:0;
-		margin-bottom: -58px;
 		margin-top: 0px;
 		max-height: 560px;
 		overflow:hidden;
 		z-index: 998;
-/*		background-color: white;*/
+		background-color: white;
 	}
 /*clouds in the fuckin banner*/
 

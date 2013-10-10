@@ -1601,9 +1601,22 @@ ul.small_social_links {
 img.mt4{
 	padding: 1px 1px 1px 1px;
 
-
+}
+/*end mt4*/
+/*Binary Options Page*/
+.bo_wrapper{
+	margin-left: 50px;
+	margin-right: 100px;
+	margin-bottom: 18px;
+	padding: 1px 1px 1px 1px;
 
 }
+img.bo{
+	padding: 1px 1px 1px 1px;
+
+}
+
+/*end binary*/
 
 
 /*------------------*/
@@ -2019,6 +2032,21 @@ ul.post_meta_links_small {
 	border-bottom: 1px solid #e3e3e3;
 	border-radius: 5px;
 	background-color: #f9f9f9;
+}
+select {
+		float: left;
+	width: 70%;
+	height: 25px;
+	padding: 7px 10px 0px 10px;
+	border-top: 2px solid #e3e3e3;
+	border-left: 2px solid #e3e3e3;
+	border-right: 2px solid #e3e3e3;
+	border-bottom: 2px solid #e3e3e3;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+	margin-bottom: 5px;
+	color:#999;
+
 }
 .comment_checkbox {
 	float: left;
@@ -3175,7 +3203,7 @@ ul.list10 li {
 	border: 1px solid #dddddd;
 	margin-bottom:20px;
 	width: 100%;
-	font-weight: 200px;
+	font-weight: 200;
 }
 .table-econ th {
 	padding: 10px;
@@ -4086,9 +4114,15 @@ li.ef-icon3 {
 		padding-right:70px;
 	}
 
+	input[type=text]{
+}
+
 /* === HTML5 validation styles === */	
 .contact_form input:required, .contact_form textarea:required {
 	background: #fff url(red_asterisk.png) no-repeat 98% center;
+	border-color:#ccc;
+-webkit-box-shadow:inset 0 1px 3px rgba(163,163,163,.05),0 0 8px rgba(163,163,163,.05);
+box-shadow:inset 0 1px 3px rgba(163,163,163,.05),0 0 8px rgba(163,163,163,.05)
 }
 .contact_form input:required:valid, .contact_form textarea:required:valid {
 	background: #fff url(valid.png) no-repeat 98% center;
@@ -4097,8 +4131,9 @@ li.ef-icon3 {
 }
 .contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
 	background: #fff url(invalid.png) no-repeat 98% center;
-	box-shadow: 0 0 5px #d45252;
-	border-color: #b03535
+	border-color:#56b4ef;
+-webkit-box-shadow:inset 0 1px 3px rgba(0,0,0,.05),0 0 8px rgba(82,168,236,.6);
+box-shadow:inset 0 1px 3px rgba(0,0,0,.05),0 0 8px rgba(82,168,236,.6)
 }
 
 /* === Form hints === */
