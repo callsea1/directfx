@@ -28,4 +28,13 @@
 //= require scrollup
 //= require carous
 //= require revolution
-// require jquery-ui-1.10.3
+//= require jquery-ui-1.10.3
+
+jQuery(function(){
+    jQuery('#calendar_date').datepicker({
+    		dateFormat: 'dd-M-yy', 
+            inline: true,  
+            showOtherMonths: true,  
+            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], 
+    });
+});

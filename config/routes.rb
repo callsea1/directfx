@@ -12,7 +12,10 @@ DirectfxRails::Application.routes.draw do
 
    get '/reports/daily' => 'reports#daily', as: :daily_report
    get '/reports/weekly' => 'reports#weekly', as: :weekly_report
-   get '/economic_calendar' => 'reports#calendar', as: :economic_calendar
+
+   match '/economic_calendar' => 'reports#calendar', via: [:get, :post]
+
+
 
    get '/currensee' => 'forex_trading#currensee', as: :currensee
    get '/mt4_live_account_signup' => 'forex_trading#mt4_live_account_signup', as: :mt4_live_account_signup

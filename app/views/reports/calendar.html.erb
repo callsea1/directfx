@@ -27,9 +27,38 @@
     
     <div class="big_text1">Economic Calendar</div>
    
-    <p><span class="dropcap3">E</span>njoy this fine calendar.</p>
+    <p><span class="dropcap3">E</span>njoy this fine calendar.</p></br>
 
- 
+
+			<%= form_tag economic_calendar_path, { :name => 'calendar_form', :method => :post} do %>
+
+				
+
+								
+			
+				<%= text_field_tag 'calendar_date', @time.strftime("%d-%b-%Y"), :placeholder => 'Date' %>
+			
+				
+
+			
+			    	<%= check_box_tag(:weekly) %>
+					<%= label_tag(:weekly, "Weekly") %>
+			    
+			    <div class="comment_input_bg_wrapper">
+				<%= text_field_tag 'timezone', nil, :placeholder => 'Timezone' %>
+
+			    </div>
+			    
+			    
+
+			    <div class="comment_submit_wrapper_left"><%= submit_tag "See Calendar", :class => "comment_submit"%></div>
+			<% end %>
+
+			date: <%= params[:calendar_date] %></br>
+			weekly: <%= params[:weekly] %></br>
+			timezone: <%= params[:timezone] %></br>
+
+
     <div class="clearfix divider_line2"></div>
 
     <!-- Date	Time	Country		Event	Actual	Forecast	Previous -->
