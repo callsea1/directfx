@@ -23,6 +23,7 @@ DirectfxRails::Application.routes.draw do
    get '/mt4_demo_account_signup' => 'forex_trading#mt4_demo_account_signup', as: :mt4_demo_account_signup
 
    get '/binary_options' => 'binary_options#show', as: :binary_options
+   get '/binary_support' => 'binary_options#support', as: :binary_support
 
    get "download_pdf" => 'forex_trading#download_pdf', :as => :download_pdf
 

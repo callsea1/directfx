@@ -283,6 +283,7 @@ ul.tci_list_left {
 	font-weight: normal;
 	font-size: 11px;
 	color: #fff;
+
 }
 .tci_list_left li a:hover {
 	color: #181818;
@@ -309,7 +310,7 @@ ul.tci_list {
 	text-align: center;
 	line-height: 40px;
 	vertical-align: middle;
-	background-color: #ff972d;
+	background-color: #ff4c4c;
 	border-radius: 20px;
 }
 .tci_list li a:hover {
@@ -4119,7 +4120,7 @@ li.ef-icon3 {
 
 /* === HTML5 validation styles === */	
 .contact_form input:required, .contact_form textarea:required {
-	background: #fff url(red_asterisk.png) no-repeat 98% center;
+	/*background: #fff url(red_asterisk.png) no-repeat 98% center;*/
 	border-color:#ccc;
 -webkit-box-shadow:inset 0 1px 3px rgba(163,163,163,.05),0 0 8px rgba(163,163,163,.05);
 box-shadow:inset 0 1px 3px rgba(163,163,163,.05),0 0 8px rgba(163,163,163,.05)
@@ -4130,7 +4131,7 @@ box-shadow:inset 0 1px 3px rgba(163,163,163,.05),0 0 8px rgba(163,163,163,.05)
 	border-color: #28921f;
 }
 .contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
-	background: #fff url(invalid.png) no-repeat 98% center;
+	/*background: #fff url(invalid.png) no-repeat 98% center;*/
 	border-color:#56b4ef;
 -webkit-box-shadow:inset 0 1px 3px rgba(0,0,0,.05),0 0 8px rgba(82,168,236,.6);
 box-shadow:inset 0 1px 3px rgba(0,0,0,.05),0 0 8px rgba(82,168,236,.6)
@@ -4192,10 +4193,6 @@ input.comment_submit:hover {
 input.comment_submit:active {
 	border: 1px solid #20911e;
 	box-shadow: 0 0 10px 5px #356b0b inset; 
-	-webkit-box-shadow:0 0 10px 5px #356b0b inset ;
-	-moz-box-shadow: 0 0 10px 5px #356b0b inset;
-	-ms-box-shadow: 0 0 10px 5px #356b0b inset;
-	-o-box-shadow: 0 0 10px 5px #356b0b inset;
 	
 }
 
@@ -4320,4 +4317,113 @@ input.comment_submit:active {
 .ui-datepicker-calendar tr:last-child .ui-state-active {
 	height: 29px;
 	margin-bottom: 0;
+}
+
+/********** Accordian faq section **********/
+
+/*Add some spacing*/
+.faq-section{
+	margin: 20px 0;
+        position: relative;
+}
+
+/*Hide the paragraphs*/
+.faq-section p{
+	display: none;
+}	
+
+/*Hide the checkboxes */
+.faq-section input{
+	position: absolute;
+	z-index: 2;
+	cursor: pointer;
+	opacity: 0;			
+	display: none\9; /* IE8 and below */
+	margin: 0;			
+	width: 100%;
+	height: 36px;
+}
+
+
+/*Show only the clipped intro */
+.faq-section label+p{
+	display: block;	
+	color: #bbb;
+	font-size: .85em;
+	transition: all .15s ease-out;
+	/* Clipping text */
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;						
+}
+/*this styles the cut off text*/
+/*.faq-section label+p:hover{ 
+	background: #f5f5f5;					
+}*/
+
+/*this styles the label*/
+.faq-section input[type=checkbox]:hover~label{
+	/*color: #fff;*/
+	background-color: #ddd;
+}
+
+
+/*If the checkbox is checked, show all paragraphs*/
+.faq-section input[type=checkbox]:checked~p{
+	display: block;
+	color: #999;
+	font-size: 1em;
+	/* restore clipping defaults */
+	text-overflow: clip; 
+	white-space: normal;
+	overflow: visible;	
+}
+
+
+/*Style the label*/
+.faq-section label{
+	font-size: 1.2em;
+	background: #eee;
+	display: block;
+	position: relative;
+        height: 20px;
+	padding: 7px 10px;
+	font-weight: bold;
+	border: 1px solid #ddd;
+	border-left: 3px solid #888;
+	text-shadow: 0 1px 0 rgba(255,255,255,.1);
+	transition: all .15s ease-out;			
+}
+
+/*Remove text selection when toggle-ing*/
+.faq-section label::selection{
+	background: none;
+}
+
+
+/*If the checkbox is checked, style the label accordingly*/
+.faq-section input[type=checkbox]:checked~label{
+	border-color: #aaa;			
+	background-image: linear-gradient(to bottom, #fff, #ddd);
+	box-shadow: 0 0 1px rgba(0,0,0,.4);				
+}
+
+
+/*Label's arrow - default state */
+.faq-section label::before{
+	content: '';
+	position: absolute;
+	right: 4px;
+	top: 50%;
+	margin-top: -6px;
+	border: 6px solid transparent;
+	border-left-color: inherit;	
+}
+
+/*Update the right arrow*/
+.faq-section input[type=checkbox]:checked~label::before{
+	border: 6px solid transparent;
+	border-top-color: inherit;
+	margin-top: -3px;
+	right: 10px;	
 }
