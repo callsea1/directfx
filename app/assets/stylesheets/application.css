@@ -10,9 +10,9 @@
  *
  *= require_self
  *= require reset
+ *= require colors/red
  *= require style
  *= require responsive-leyouts
- *= require colors/red
  *= require bg-patterns/pattern-default
  *= require fullwidth
  *= require settings
