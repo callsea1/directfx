@@ -1,15 +1,16 @@
 $(document).ready(function(){
- 
-        // $(".slidingDiv").hide();
-    //     $("#moreInfoPopup").hide();
-    //     $(".show_hide").show();
 
-   
-    $(".slidingDiv").show();
+  var $red_pane = $(".slidingDiv");
 
-    $('.show_hide').click(function(){
+  enquire.register("screen and (min-width: 479px)", {
+        match : function() {
+            $red_pane.show();
+        },
+        unmatch : function() {
+            $red_pane.hide();       
+        }
+   });
+ $('.show_hide').click(function(){
     $(".slidingDiv").slideToggle();
-    });
-
- 
+  });
 });

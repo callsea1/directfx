@@ -446,11 +446,19 @@ a.show_hide{
 	width: 100%;
 	margin-bottom: 30px;
 }
+/*binary options form layout*/
 .one_third {
 	width: 100%;
 	margin-bottom: 30px;
+	
+}
+
+/*this is really original 'one_third'*/
+.one_third_custom {
 	margin-left: 100px;
 }
+
+
 .one_fourth {
 	width: 100%;
 	margin-bottom: 30px;

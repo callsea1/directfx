@@ -1618,6 +1618,46 @@ img.bo{
 }
 
 /*end binary*/
+/*forex page*/
+.forex_wrapper{
+	margin-left: 0px;
+	margin-right: 100px;
+	margin-bottom: 18px;
+	padding: 1px 1px 1px 1px;
+
+}
+img.forex{
+	padding: 1px 1px 1px 1px;
+
+}
+
+/*end forex page*/
+/*metals page*/
+.metals_wrapper{
+	margin-left: 0px;
+	margin-right: 100px;
+	margin-bottom: 18px;
+	padding: 1px 1px 1px 1px;
+
+}
+img.metals{
+	padding: 1px 1px 1px 1px;
+
+}
+
+/*end metals page*/
+/*cfd page*/
+.cfd_wrapper{
+	margin-left: 0px;
+	margin-right: 100px;
+	margin-bottom: 18px;
+	padding: 1px 1px 1px 1px;
+
+}
+img.cfd{
+	padding: 1px 1px 1px 1px;
+
+}
 
 
 /*------------------*/
@@ -3197,6 +3237,7 @@ ul.list10 li {
 }
 
 /*custom table style for econ calendar (to preserve spread formatting for other things)*/
+/*to do: verify this can work with iframe calendar or delete*/
 
 .table-econ {
 	float: left;
@@ -3219,10 +3260,17 @@ ul.list10 li {
 	background-color: #f9f9f9;
 }
 
-
-
 /*end econ calendar table style*/
 
+/*forex element table*/
+#forex_table td:hover {
+	/*border: solid #FF4800;*/
+    color: #fff;
+    background-color: #626262;
+	-webkit-transition: all .5s;
+    transition: all .5s;
+}
+/*end forex table*/
 
 
 /* pricing tables */
@@ -3955,7 +4003,7 @@ a.but_rightarrow:hover {
 	float: left;
 	width: 96%;
 	padding: 2%;
-	margin: 20px;
+	margin: 20px 20px 20px 0;
 	background-color: #fbfbfb;
 	border: 1px solid #eee;
 	border-bottom: 2px solid #eee;

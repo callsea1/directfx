@@ -1,4 +1,3 @@
-<!-- {"M008CODE"=>"293061", "REDATE"=>"20-Sep-2013", "RETIME"=>"14:00:00", "DATECOL2"=>"20-Sep-2013 14:00:00", "COUNTRY"=>"Eurozone", "FREQUENCY"=>"Monthly", "RELEVANCE"=>"M", "INDNAME"=>"Consumer Confidence - (P)", "INDTYPE"=>"Economic", "INDSOURCE"=>"European Commission", "INDDESC"=>"Consumer Confidence, released by the European Commission, is the arithmetic average of the balances (in percentage points) of the answers to the questions on the financial situation of households, the general economic situation, unemployment expectations (with inverted sign) and savings, all over the next 12 months. Balances are seasonally adjusted.", "ACTUAL"=>nil, "PREVIOUS"=>"-15.60", "PERIOD"=>"Sep-2013", "SOURCELINK"=>"http://ec.europa.eu/index_en.htm", "EVENTSUBTYP"=>"Production and Business Activity", "CURRNCY"=>nil, "COUNTRYFLAG"=>"EU.jpg"} -->
 
 
 
@@ -27,93 +26,7 @@
     
     <div class="big_text1">Economic Calendar</div>
    
-    <p><span class="dropcap3">E</span>njoy this fine calendar.</p></br>
-
-
-			<%= form_tag economic_calendar_path, { :name => 'calendar_form', :method => :post} do %>
-
-				
-
-								
-			
-				<%= text_field_tag 'calendar_date', @time.strftime("%d-%b-%Y"), :placeholder => 'Date' %>
-			
-				
-
-			
-			    	<%= check_box_tag(:weekly) %>
-					<%= label_tag(:weekly, "Weekly") %>
-			    
-			    <div class="comment_input_bg_wrapper">
-				<%= text_field_tag 'timezone', nil, :placeholder => 'Timezone' %>
-
-			    </div>
-			    
-			    
-
-			    <div class="comment_submit_wrapper_left"><%= submit_tag "See Calendar", :class => "comment_submit"%></div>
-			<% end %>
-
-			date: <%= params[:calendar_date] %></br>
-			weekly: <%= params[:weekly] %></br>
-			timezone: <%= params[:timezone] %></br>
-
-
-    <div class="clearfix divider_line2"></div>
-
-    <!-- Date	Time	Country		Event	Actual	Forecast	Previous -->
-        
-
-<div class="table-econ">
-<table class="table-list">
-<THEAD>
-	<!-- <th>M008CODE</th> -->
-	<th>REDATE</th>
-	<th>RETIME</th>
-<!-- 	<th>DATECOL2</th> -->
-	<th>COUNTRY</th>
-<!-- 	<th>FREQUENCY</th>
-	<th>RELEVANCE</th> -->
-	<th>INDNAME</th> <!-- Event -->
-<!-- 	<th>INDTYPE</th>
-	<th>INDSOURCE</th>
-	<th>INDDESC</th> -->
-	<th>ACTUAL</th>
-	<th>FORCAST</th>
-	<th>PREVIOUS</th>
-	<!-- <th>PERIOD</th>
-	<th>SOURCELINK</th>
-	<th>EVENTSUBTYP</th>
-	<th>CURRNCY</th>
-	<th>COUNTRYFLAG</th> -->
-</THEAD>
-
-<% @data.each do |xml| %>
-<tr>
-	<!-- <td><%=  xml['M008CODE'] %></td> -->
-	<td><%=  xml['REDATE'] %></td>
-	<td><%=  xml['RETIME'] %></td>
-	<!-- <td><%=  xml['DATECOL2'] %></td> -->
-	<td><%=  xml['COUNTRY'] %></td>
-	<!-- <td><%=  xml['FREQUENCY'] %></td>
-	<td><%=  xml['RELEVANCE'] %></td> -->
-	<td><%=  xml['INDNAME'] %></td>
-	<!-- <td><%=  xml['INDTYPE'] %></td>
-	<td><%=  xml['INDSOURCE'] %></td>
-	<td><%=  xml['INDDESC'] %></td> -->
-	<td><%=  xml['ACTUAL'] %></td>
-	<td><%=  xml['FORCAST'] %></td>
-	<td><%=  xml['PREVIOUS'] %></td>
-	<!-- <td><%=  xml['PERIOD'] %></td>
-	<td><%=  xml['SOURCELINK'] %></td>
-	<td><%=  xml['EVENTSUBTYP'] %></td>
-	<td><%=  xml['CURRNCY'] %></td>
-	<td><%=  xml['COUNTRYFLAG'] %></td> -->
-</tr>
-<%end%>
-</table>
-
-</div>
+<iframe src="http://ecal.decimalpointanalytics.info/directfx.aspx" scrolling="yes" frameborder="0"></iframe>
   
     </div><!-- end section -->
 	

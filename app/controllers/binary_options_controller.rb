@@ -6,4 +6,15 @@ class BinaryOptionsController < ApplicationController
 	def support
 	end
 	
+
+	def forex
+	end
+
+	def metals
+	end
+
+	def cfd
+	end
+
+
 end

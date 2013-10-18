@@ -24,10 +24,11 @@
 //= require scripts
 //= require tabs
 //= require tabs-style2
+//= require enquire.min
 //= require showHide
 //= require scrollup
 //= require carous
 //= require revolution
 //= require jquery-ui-1.10.3
-//= require datePicker.js
+//= require datePicker
 
