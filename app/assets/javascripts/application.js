@@ -18,13 +18,13 @@
 //= require ddsmoothmenu
 //= require jquery-1.7.1.min
 //= require selectnav
+//= require enquire.min
 //= require jquery.jcarousel.min
 //= require jquery.themepunch.plugins.min
 //= require jquery.themepunch.revolution.min
 //= require scripts
 //= require tabs
 //= require tabs-style2
-//= require enquire.min
 //= require showHide
 //= require scrollup
 //= require carous
