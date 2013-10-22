@@ -515,14 +515,14 @@ a.show_hide{
 	font-size: 12px;
 	color: #fff;
 	text-transform: uppercase;
-	background: #454545 url(arrow-9.png) no-repeat right 9px;
+	background: #454545 url(arrow-9-2.png) no-repeat right 9px;
 	background-size: 15%;
 	border-bottom: 3px solid #d96d03;
 	border-radius: 4px;
 }
 .button_slider:hover, .button_slider_02:hover {
 	color: #fff;
-	background: #454545 url(arrow-9.png) no-repeat right 9px;
+	background: #454545 url(arrow-9-2.png) no-repeat right 9px;
 	background-size: 15%;
 	border-bottom: 3px solid #333;
 }
@@ -1125,15 +1125,14 @@ a.show_hide{
 	font-size: 10px;
 	color: #fff;
 	text-transform: uppercase;
-	background: 
-#454545 url(arrow-9.png) no-repeat right 7px;
+	background: #454545 url(arrow-9-2.png) no-repeat right 7px;
 	background-size: 15%;
 	border-bottom: 2px solid #d96d03;
 	border-radius: 2px;
 }
 .button_slider:hover, .button_slider_02:hover {
 	color: #fff;
-	background: #454545 url(arrow-9.png) no-repeat right 7px;
+	background: #454545 url(arrow-9-2.png) no-repeat right 7px;
 	background-size: 15%;
 	border-bottom: 2px solid #333;
 }
