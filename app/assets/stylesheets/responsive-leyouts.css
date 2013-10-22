@@ -515,15 +515,14 @@ a.show_hide{
 	font-size: 12px;
 	color: #fff;
 	text-transform: uppercase;
-	background: 
-#FF0000 url(../images/arrow-9.png) no-repeat right 9px;
+	background: #454545 url(arrow-9.png) no-repeat right 9px;
 	background-size: 15%;
 	border-bottom: 3px solid #d96d03;
 	border-radius: 4px;
 }
 .button_slider:hover, .button_slider_02:hover {
 	color: #fff;
-	background: #454545 url(../images/arrow-9.png) no-repeat right 9px;
+	background: #454545 url(arrow-9.png) no-repeat right 9px;
 	background-size: 15%;
 	border-bottom: 3px solid #333;
 }
@@ -791,18 +790,18 @@ ul.post_meta_links {
 	float: left;
 	padding: 0px 0px 0px 18px;
 	border-right: 1px solid #d3d3d3;
-	background: url(../images/blog/icon-by-user.png) no-repeat 0px 5px;
+	background: url(blog/icon-by-user.png) no-repeat 0px 5px;
 }
 .post_meta_links li.post_categoty {
 	float: left;
 	padding: 0px 0px 0px 25px;
 	border-right: 1px solid #d3d3d3;
-	background: url(../images/blog/icon-category.png) no-repeat 9px 6px;
+	background: url(blog/icon-category.png) no-repeat 9px 6px;
 }
 .post_meta_links li.post_comments {
 	float: left;
 	padding: 0px 0px 0px 25px;
-	background: url(../images/blog/icon-comments.png) no-repeat 9px 5px;
+	background: url(blog/icon-comments.png) no-repeat 9px 5px;
 }
 .post_meta_links li a {
 	color: #a1a1a1;
@@ -1127,14 +1126,14 @@ a.show_hide{
 	color: #fff;
 	text-transform: uppercase;
 	background: 
-#FF0000 url(../images/arrow-9.png) no-repeat right 7px;
+#454545 url(arrow-9.png) no-repeat right 7px;
 	background-size: 15%;
 	border-bottom: 2px solid #d96d03;
 	border-radius: 2px;
 }
 .button_slider:hover, .button_slider_02:hover {
 	color: #fff;
-	background: #454545 url(../images/arrow-9.png) no-repeat right 7px;
+	background: #454545 url(arrow-9.png) no-repeat right 7px;
 	background-size: 15%;
 	border-bottom: 2px solid #333;
 }
@@ -1422,17 +1421,17 @@ ul.post_meta_links {
 .post_meta_links li.post_by {
 	float: left;
 	padding: 0px 0px 0px 18px;
-	background: url(../images/blog/icon-by-user.png) no-repeat 0px 5px;
+	background: url(blog/icon-by-user.png) no-repeat 0px 5px;
 }
 .post_meta_links li.post_categoty {
 	float: left;
 	padding: 0px 0px 0px 25px;
-	background: url(../images/blog/icon-category.png) no-repeat 9px 6px;
+	background: url(blog/icon-category.png) no-repeat 9px 6px;
 }
 .post_meta_links li.post_comments {
 	float: left;
 	padding: 0px 0px 0px 25px;
-	background: url(../images/blog/icon-comments.png) no-repeat 9px 5px;
+	background: url(blog/icon-comments.png) no-repeat 9px 5px;
 }
 .post_meta_links li a {
 	color: #a1a1a1;
