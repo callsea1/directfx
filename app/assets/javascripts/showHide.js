@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   var $red_pane = $(".slidingDiv");
 
-  enquire.register("screen and (min-width: 768px)", {
+  enquire.register("screen and (min-width: 999px)", {
         match : function() {
             $red_pane.show();
         },

@@ -377,29 +377,7 @@ ul.tci_list {
 	border-bottom: 5px solid #333;
 }
 
-.button_slider_02 {
-	margin: 0px;
-	padding: 10px 35px 10px 22px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: normal;
-	font-size: 16px;
-	color: #fff;
-	text-transform: uppercase;
-	background: #454545 url(arrow-9-2.png) no-repeat right 15px;
-	border-bottom: 5px solid #333;
-	box-shadow: inset 0 1px 0 0 #767676;
-	border-radius: 5px;
-}
-.button_slider_02:hover {
-	color: #fff;
-	background: #484848 url(arrow-9-2.png) no-repeat right 15px;
-	border-bottom: 5px solid #333;
-}
-.button_slider_02:active {
-	color: #fff;
-	background: #6b6b6b url(arrow-9-2.png) no-repeat right 15px;
-	border-bottom: 5px solid #333;
-}
+
 
 .shadow_div_top {
 	position: relative;
@@ -2615,16 +2593,23 @@ a.but_music:hover {
 	background-color: #dada8a;
 }
 
+/*edited for colors*/
+
 a.but_hand_right {
 	padding: 10px 22px 10px 45px;
 	margin: 0px 0px 0px 0px;
-	background: 
-#FF0000 url(elements/hand_right.png) no-repeat 16px 12px;
-	border-bottom: 1px solid #909090;
+	color: #fff;
+	background: #454545 url(elements/hand_right.png) no-repeat 16px 12px;
+	border-bottom: 1px solid #333;
 }
 a.but_hand_right:hover {
 	color: #fff;
-	background-color: #ff9900;
+	background-color: #484848;
+	border-bottom: 1px solid #333;
+}
+a.but_hand_right:active {
+	color: #fff;
+	background-color: #6b6b6b;
 }
 
 a.but_thumbs_down {
@@ -4474,4 +4459,29 @@ input.comment_submit:active {
 	border-top-color: inherit;
 	margin-top: -3px;
 	right: 10px;	
+}
+
+/*button for slider on home page*/
+.button_slider_02 {
+	margin: 0px;
+	padding: 10px 35px 10px 22px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	background: #454545 url(arrow-9-2.png) no-repeat right 15px;
+	border-bottom: 5px solid #333;
+	box-shadow: inset 0 1px 0 0 #767676;
+	border-radius: 5px;
+}
+.button_slider_02:hover {
+	color: #fff;
+	background: #484848 url(arrow-9-2.png) no-repeat right 15px;
+	border-bottom: 5px solid #333;
+}
+.button_slider_02:active {
+	color: #fff;
+	background: #6b6b6b url(arrow-9-2.png) no-repeat right 15px;
+	border-bottom: 5px solid #333;
 }
