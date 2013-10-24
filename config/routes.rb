@@ -5,6 +5,7 @@ DirectfxRails::Application.routes.draw do
   # You can have the root of your site routed with "root"
    root 'site#index'
    get '/get_in_touch' => 'site#contact', as: :contact
+   get '/introducing_broker' => 'site#introducing_broker', as: :introducing_broker
 
    get '/who_we_are' => 'who_we_are#show', as: :who
    get '/regulation' => 'who_we_are#regulation', as: :regulation
@@ -19,10 +20,12 @@ DirectfxRails::Application.routes.draw do
    get '/mt4_live_account_signup' => 'forex_trading#mt4_live_account_signup', as: :mt4_live_account_signup
    get '/mt4_cash_bonus' => 'forex_trading#mt4_live_bonus', as: :mt4_live_bonus
    get '/mt4_demo_account_signup' => 'forex_trading#mt4_demo_account_signup', as: :mt4_demo_account_signup
-   get '/mt4_demo_confirmation' => 'forex_trading#mt4_demo_confirmation', as: :mt4_demo_confirmation
+   get '/mt4_demo_thank_you' => 'forex_trading#mt4_demo_confirmation', as: :mt4_demo_confirmation
+   get '/mt4_live_thank_you' => 'forex_trading#mt4_live_confirmation', as: :mt4_live_confirmation
 
    get '/binary_options' => 'binary_options#show', as: :binary_options
-   get '/binary_support' => 'binary_options#support', as: :binary_support
+   get '/binary_options_thank_you' => 'binary_options#binary_options_confirmation', as: :binary_options_confirmation
+   get '/binary_options_support' => 'binary_options#support', as: :binary_support
    get '/forex'          => 'binary_options#forex', as: :forex
    get '/metals'         => 'binary_options#metals', as: :metals
    get '/cfd'            => 'binary_options#cfd', as: :cfd

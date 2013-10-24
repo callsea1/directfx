@@ -7,5 +7,8 @@ class SiteController < ApplicationController
 	def contact
 	end
 
+	def introducing_broker
+	end
+
 
 end

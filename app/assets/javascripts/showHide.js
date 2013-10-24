@@ -14,4 +14,7 @@ $(document).ready(function(){
     $(".slidingDiv").slideToggle();
   });
   // $('#da-slider').Slider();
+
+  $(".success").fadeOut(5000);
+
 });

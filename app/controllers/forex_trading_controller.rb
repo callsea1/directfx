@@ -16,6 +16,9 @@ class ForexTradingController < ApplicationController
 	def mt4_demo_confirmation
 	end
 
+	def mt4_live_confirmation
+	end
+
 	def download_pdf
     send_file "#{Dir.getwd}/public/pdf/#{params[:pdf]}", :type=>"application/pdf", :x_sendfile=>true
 	end

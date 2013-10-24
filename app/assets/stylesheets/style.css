@@ -1569,17 +1569,14 @@ ul.small_social_links {
 
 /*Mt4 live acocunt page image style*/
 .cash_wrapper{
-	margin-left: 140px;
+	margin-left: 0px;
 	margin-right: 100px;
 	margin-bottom: 18px;
-    width:42%;
-	height:42%;
 	padding: 1px 1px 1px 1px;
 
 }
 img.mt4{
 	padding: 1px 1px 1px 1px;
-
 }
 /*end mt4*/
 /*Binary Options Page*/
@@ -1636,7 +1633,18 @@ img.cfd{
 	padding: 1px 1px 1px 1px;
 
 }
+/*MT4 demo confimation page*/
+.mt4_demo_comfirmation_wrapper{
+	margin-left: 0px;
+	margin-right: 100px;
+	margin-bottom: 18px;
+	padding: 1px 1px 1px 1px;
 
+}
+img.mt4_demo_confirmation{
+	padding: 1px 1px 1px 1px;
+
+}
 
 /*------------------*/
 /*	CONTENT
