@@ -19,6 +19,7 @@ DirectfxRails::Application.routes.draw do
    get '/mt4_live_account_signup' => 'forex_trading#mt4_live_account_signup', as: :mt4_live_account_signup
    get '/mt4_cash_bonus' => 'forex_trading#mt4_live_bonus', as: :mt4_live_bonus
    get '/mt4_demo_account_signup' => 'forex_trading#mt4_demo_account_signup', as: :mt4_demo_account_signup
+   get '/mt4_demo_confirmation' => 'forex_trading#mt4_demo_confirmation', as: :mt4_demo_confirmation
 
    get '/binary_options' => 'binary_options#show', as: :binary_options
    get '/binary_support' => 'binary_options#support', as: :binary_support

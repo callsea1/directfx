@@ -5,13 +5,15 @@ class ForexTradingController < ApplicationController
 	end
 
 	def mt4_live_account_signup
-
 	end
 
 	def mt4_live_bonus
 	end
 
 	def mt4_demo_account_signup
+	end
+
+	def mt4_demo_confirmation
 	end
 
 	def download_pdf

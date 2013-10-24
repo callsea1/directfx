@@ -8,8 +8,34 @@
 		if (tpj.fn.cssOriginal!=undefined)
 			tpj.fn.css = tpj.fn.cssOriginal;
 
+		  //set above 1230 as the default value and override if smaller
+
+		    var $delay = 9000;
+		    var $startwidth = 1000;
+		    var $startheight = 560;
+
+
+				enquire.register("screen and (max-width:1230px)", {
+					match: function() {
+					console.log("handler max-width 1230px");
+					}
+					}).register("screen and (max-width:1000px)", {
+					match: function() {
+					console.log("handler max-width 1000px");
+					}
+					}).register("screen and (max-width:768px)", {
+					match: function() {
+					console.log("handler max-width 768px");
+					}
+					}).register("screen and (max-width:479px)", {
+					match: function() {
+					console.log("handler max-width 479px");
+					}
+					});
+
 			tpj('.fullwidthbanner').revolution(
 				{
+
 					delay:9000,
 					startwidth:1000,
 					startheight:560,
