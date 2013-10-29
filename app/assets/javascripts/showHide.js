@@ -13,8 +13,14 @@ $(document).ready(function(){
  $('.show_hide').click(function(){
     $(".slidingDiv").slideToggle();
   });
-  // $('#da-slider').Slider();
+ 
+ //front page slider hpefully works this try :)
 
+  jQuery('.bxslider').bxSlider({
+    video: true,
+  useCSS: false,
+  captions: true,
+  });
 
 
   $(".success").fadeOut(5000);
