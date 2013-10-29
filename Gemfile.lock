@@ -125,7 +125,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bxslider-rails
+  bxslider-rails (~> 4.1.0)
   coffee-rails (~> 4.0.0)
   country_select
   httparty

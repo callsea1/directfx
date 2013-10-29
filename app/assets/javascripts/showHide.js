@@ -18,10 +18,9 @@ $(document).ready(function(){
 
   jQuery('.bxslider').bxSlider({
     video: true,
-  useCSS: false,
+  useCSS: true,
   captions: true,
   });
-
 
   $(".success").fadeOut(5000);
 

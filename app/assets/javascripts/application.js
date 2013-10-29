@@ -31,16 +31,6 @@
 //= require carous
 // require revolution
 //= require jquery-ui-1.10.3
-// require datePicker
 //= require bxslider
  
 
-
-
-jQuery(document).ready(function(){
-  jQuery('.bxslider').bxSlider({
-  	video: true,
-  useCSS: false,
-  captions: true,
-  });
-});
