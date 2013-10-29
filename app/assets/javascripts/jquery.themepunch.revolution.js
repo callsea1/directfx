@@ -66,7 +66,7 @@
 					hideSliderAtLimit:0,					// Hide the whole slider, and stop also functions if Width of Browser is less than this value
 
 					shadow:1,								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
-					fullWidth:"off"							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+					fullWidth:"on"							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
 
 				};
 

@@ -10,5 +10,8 @@ class SiteController < ApplicationController
 	def introducing_broker
 	end
 
+	def introducing_broker_confirmation
+	end
+
 
 end

@@ -34,16 +34,16 @@ Limited risk is one of the reasons why Binary Options trading is so popular. Wit
         <h5>Binary Demo Registration</h5>
 <ul>
 
-	<%= form_tag url_for("https://mpmarketing.infusionsoft.com/app/form/process/29cde8ca08fc1bc56b53ed5b114738e8"), {:class => 'contact_form', :name => 'contact_form', :method => :post} do %>
+	<%= form_tag url_for("https://mpmarketing.infusionsoft.com/app/form/process/4bb013cc0c9393bd312428c7e56edbc1"), {:class => 'contact_form', :name => 'contact_form', :method => :post} do %>
 
-	<%= hidden_field_tag("inf_form_xid", "29cde8ca08fc1bc56b53ed5b114738e8") %>
+	<%= hidden_field_tag("inf_form_xid", "4bb013cc0c9393bd312428c7e56edbc1") %>
 	<%= hidden_field_tag("inf_form_name", "DIRECT FX  DEMO BINARY") %>
-	<%= hidden_field_tag("infusionsoft_version", "1.29.6.32") %>
+	<%= hidden_field_tag("infusionsoft_version", "1.29.6.37") %>
 
 								
 	<div class="comment_input_bg_wrapper"><%= text_field_tag 'inf_field_FirstName', nil, :placeholder => 'First Name', :class => "comment_input_bg", :required => true  %></div>
 	<div class="comment_input_bg_wrapper"><%= text_field_tag 'inf_field_LastName', nil, :placeholder => 'Last Name', :class => "comment_input_bg", :required => true  %></div>
-	<div class="comment_input_bg_wrapper"><%= email_field_tag 'inf_field_Email', nil, :placeholder => 'Email', :class => "comment_input_bg", :required => true   %></div>
+	<div class="comment_input_bg_wrapper"><%= email_field_tag 'inf_field_Email', nil, :placeholder => 'Email', :class => "comment_input_bg", :required => true, :pattern => "[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}"   %></div>
 	<span class="form_hint"></span>
 
 	<div class="comment_input_bg_wrapper"><%= text_field_tag 'inf_field_Phone1', nil, :placeholder => 'Phone', :class => "comment_input_bg", :required => true, :pattern => '(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]‌​)\s*)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)([2-9]1[02-9]‌​|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})'   %></div>

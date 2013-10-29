@@ -16,7 +16,7 @@
 //= require jquery-1.3.1.min
 //= require custom_thumbzoom
 //= require ddsmoothmenu
-//= require jquery-1.7.1.min
+//= require jquery-1.8.3.min
 //= require selectnav
 //= require jquery.jcarousel.min
 //= require jquery.themepunch.plugins.min
@@ -25,12 +25,22 @@
 //= require tabs
 //= require tabs-style2
 //= require enquire.min
-//= require jquery.cslider
+// require jquery.cslider
 //= require showHide
 //= require scrollup
 //= require carous
-//= require revolution
+// require revolution
 //= require jquery-ui-1.10.3
-//= require datePicker
+// require datePicker
+//= require bxslider
+ 
 
 
+
+jQuery(document).ready(function(){
+  jQuery('.bxslider').bxSlider({
+  	video: true,
+  useCSS: false,
+  captions: true,
+  });
+});

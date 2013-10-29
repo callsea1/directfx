@@ -15,6 +15,8 @@ $(document).ready(function(){
   });
   // $('#da-slider').Slider();
 
+
+
   $(".success").fadeOut(5000);
 
 });

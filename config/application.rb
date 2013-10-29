@@ -23,5 +23,6 @@ module DirectfxRails
     # config.i18n.default_locale = :de
     # config.assets.precompile += ['*.js', '*.css', '**/*.js', '**/*.css']
       # config.assets.precompile += %w[*.png *.jpg *.jpeg *.gif *.js *.css **/*.js **/*.css *-*.png *-*-*.png *-*-*-*.png]
+      config.assets.paths << "#{Rails.root}/app/assets/videos"
   end
 end

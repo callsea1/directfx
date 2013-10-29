@@ -7,7 +7,7 @@ $(document).ready(function() {
 	var zoom = 1.2;
 
 	//On mouse over those thumbnail
-	$('.item').hover(function() {
+	jQuery('.item').hover(function() {
 		
 		//Set the width and height according to the zoom percentage
 		width = $('.item').width() * zoom;

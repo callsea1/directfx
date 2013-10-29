@@ -14,7 +14,8 @@
  *= require style
  *= require responsive-leyouts
  *= require bg-patterns/pattern-default
- *= require fullwidth
+ * require fullwidth
+ *= require responsive
  *= require settings
  *= require skin
  *= require skin2
@@ -22,5 +23,5 @@
  *= require accordion
  *= require tabs-style2
  *= require tabs
- *= require paralax_slider
+ *= require bxslider
  */

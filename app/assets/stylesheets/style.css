@@ -336,6 +336,7 @@ ul.tci_list {
 	padding: 0px 0px 0px 20px;
 	margin: 0px 20px 0px 0px;
 	background: url(phone-icon.png) no-repeat left 14px;
+	font-size: 12px;
 	border-radius: 0px;
 }
 .tci_list li.email {
@@ -701,7 +702,7 @@ ul.share_icons {
 	min-height: 300px;
 	padding: 0px;
 	margin: 0px;
-	background: #ff0000 url(/assets/bottom-bg.png) no-repeat center top;
+	background: #454545; /*url(/assets/bottom-bg.png) no-repeat center top*/
 }
 .bottom_hilight .left {
 	float: left;
@@ -3048,12 +3049,14 @@ ul.list1 li {
 }
 ul.list2 li {
 	background:url(elements/icon-ok.png) no-repeat left 5px;
+	font-size: 14px;
 }
 ul.list3 li {
 	background:url(elements/icon-right-arrow.png) no-repeat left 5px;
 }
 ul.list4 li {
 	background:url(elements/icon-star.png) no-repeat left 4px;
+	font-size: 14px;
 }
 ul.list5 li {
 	background:url(elements/icon-chevron-right.png) no-repeat left 5px;
@@ -3063,6 +3066,7 @@ ul.list6 li {
 }
 ul.list7 li {
 	background:url(elements/icon-play-button.png) no-repeat left 5px;
+	font-size: 14px;
 }
 ul.list8 li {
 	background:url(elements/icon-remove.png) no-repeat left 5px;
@@ -4493,3 +4497,13 @@ input.comment_submit:active {
 	background: #6b6b6b url(arrow-9-2.png) no-repeat right 15px;
 	border-bottom: 5px solid #333;
 }
+
+ul.bxslider li {
+	background: url(slider-bg2.jpg) no-repeat;
+}
+.bx-wrapper .bx-pager {
+	background: url(slider-bg2.jpg);
+}
+
+::-moz-selection { background: #a8d1ff; color: #454545; text-shadow: none; }
+::selection { background: #a8d1ff; color: #454545; text-shadow: none; }

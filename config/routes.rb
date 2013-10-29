@@ -6,6 +6,7 @@ DirectfxRails::Application.routes.draw do
    root 'site#index'
    get '/get_in_touch' => 'site#contact', as: :contact
    get '/introducing_broker' => 'site#introducing_broker', as: :introducing_broker
+   get '/introducing_broker_thank_you' => 'site#introducing_broker_confirmation', as: :introducing_broker_confirmation
 
    get '/who_we_are' => 'who_we_are#show', as: :who
    get '/regulation' => 'who_we_are#regulation', as: :regulation
