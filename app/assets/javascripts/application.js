@@ -19,8 +19,8 @@
 //= require jquery-1.8.3.min
 //= require selectnav
 //= require jquery.jcarousel.min
-//= require jquery.themepunch.plugins.min
-//= require jquery.themepunch.revolution.min
+// require jquery.themepunch.plugins.min
+// require jquery.themepunch.revolution.min
 //= require scripts
 //= require tabs
 //= require tabs-style2
@@ -30,7 +30,7 @@
 //= require scrollup
 //= require carous
 // require revolution
-//= require jquery-ui-1.10.3
+// require jquery-ui-1.10.3
 //= require bxslider
  
 
