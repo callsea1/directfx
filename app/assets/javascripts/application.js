@@ -26,11 +26,12 @@
 //= require tabs-style2
 //= require enquire.min
 // require jquery.cslider
+//= require bxslider
 //= require showHide
 //= require scrollup
 //= require carous
 // require revolution
 // require jquery-ui-1.10.3
-//= require bxslider
+
  
 
