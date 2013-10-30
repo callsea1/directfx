@@ -21,6 +21,13 @@
 
 /* end -- contact item on navbar*/
 
+ul.bxslider li video{
+	 width: 1200px;
+	 height: 900px;
+	 border: none;
+
+}
+
 
 }
 
@@ -1643,6 +1650,14 @@ li.contact_button2{
 	margin-right: 100px;
 	margin-bottom: 18px;
 	padding: 1px 1px 1px 1px;
+
+}
+
+/*dynamic size to shrink front page carousel video*/
+ul.bxslider li video{
+	 width: 300px;
+	 height: 300px;
+	 border: none;
 
 }
 

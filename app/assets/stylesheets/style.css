@@ -4498,12 +4498,23 @@ input.comment_submit:active {
 	border-bottom: 5px solid #333;
 }
 
+/*this styles the video on the index page slider*/
+
 ul.bxslider li {
 	background: url(slider-bg2.jpg) no-repeat;
+}
+ul.bxslider li video{
+	 width: 800px;
+	 height: 600px;
+	 border: none;
+
 }
 .bx-wrapper .bx-pager {
 	background: url(slider-bg2.jpg);
 }
 
+/*cross wide text highlight of light blue with dark font*/
 ::-moz-selection { background: #a8d1ff; color: #454545; text-shadow: none; }
 ::selection { background: #a8d1ff; color: #454545; text-shadow: none; }
+
+
