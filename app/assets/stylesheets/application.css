@@ -15,7 +15,7 @@
  *= require responsive-leyouts
  *= require bg-patterns/pattern-default
  * require fullwidth
- *= require responsive
+ * require responsive
  *= require settings
  *= require skin
  *= require skin2

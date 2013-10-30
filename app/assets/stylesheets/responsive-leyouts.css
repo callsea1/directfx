@@ -21,15 +21,38 @@
 
 /* end -- contact item on navbar*/
 
+/*carousel slider video size -- there is one for each screen size*/
 ul.bxslider li video{
 	 width: 1200px;
 	 height: 900px;
 	 border: none;
-
 }
 
 
 }
+
+@media only screen and (min-width: 817px) and (max-width: 1230px){
+	ul.bxslider li video{
+	 width: 800px;
+	 height: 600px;
+	 border: none;
+}
+}
+@media only screen and (min-width: 717px) and (max-width: 816px){
+	ul.bxslider li video{
+	 width: 700px;
+	 height: 550px;
+	 border: none;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 716px){
+	ul.bxslider li video{
+	 width: 460px;
+	 height: 400px;
+	 border: none;
+}
+}
+
 
 
 @media only screen and (min-width: 768px) and (max-width: 1230px){
@@ -1654,11 +1677,38 @@ li.contact_button2{
 }
 
 /*dynamic size to shrink front page carousel video*/
+/*ul.bxslider {
+	height:400px;
+	width:450px;
+	zoom: 0;
+	
+}
+ul.bxslider li {
+	background: url(slider-bg2.jpg) no-repeat;
+	width: 310px;
+	height: 400px;
+}*/
+
+.slider{
+	/*background: url(slider-bg2.jpg) no-repeat;*/
+/*	width: 200px;
+	height: 200px;*/
+}
+
+/*div.bx-wrapper{
+	width: 400px;
+	height: 400px;	
+}*/
+
 ul.bxslider li video{
-	 width: 300px;
+	 width: 360px;
 	 height: 300px;
 	 border: none;
-
 }
+
+/* li.bx-clone{
+	height:450px;
+	width:360px;
+}*/
 
 }

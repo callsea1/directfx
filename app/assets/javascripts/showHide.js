@@ -18,8 +18,8 @@ $(document).ready(function(){
 
   jQuery('.bxslider').bxSlider({
     video: true,
-  useCSS: true,
-  captions: true,
+  useCSS: false,
+  captions: false,
   });
 
   $(".success").fadeOut(5000);

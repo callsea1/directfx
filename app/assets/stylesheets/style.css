@@ -4502,15 +4502,18 @@ input.comment_submit:active {
 
 ul.bxslider li {
 	background: url(slider-bg2.jpg) no-repeat;
+
 }
-ul.bxslider li video{
+/*moved this sizing to multiple places in responive-leyouts*/
+/*ul.bxslider li video{
 	 width: 800px;
 	 height: 600px;
 	 border: none;
 
-}
+}*/
 .bx-wrapper .bx-pager {
 	background: url(slider-bg2.jpg);
+
 }
 
 /*cross wide text highlight of light blue with dark font*/
