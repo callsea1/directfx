@@ -4520,4 +4520,10 @@ ul.bxslider li {
 ::-moz-selection { background: #a8d1ff; color: #454545; text-shadow: none; }
 ::selection { background: #a8d1ff; color: #454545; text-shadow: none; }
 
+.centre {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
 

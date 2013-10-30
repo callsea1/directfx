@@ -18,7 +18,7 @@ $(document).ready(function(){
 
   jQuery('.bxslider').bxSlider({
     video: true,
-  useCSS: false,
+  useCSS: true,
   captions: false,
   });
 
