@@ -87,7 +87,7 @@
 .people_says .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
     left: 5px;
     right: auto;
-    background-image: url(prev-horizontal.png);
+    background: url(prev-horizontal.png);
 }
 
 .people_says .jcarousel-skin-tango .jcarousel-next-horizontal:hover,
@@ -120,7 +120,7 @@
 .people_says .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal {
     left: auto;
     right: 5px;
-    background-image: url(next-horizontal.png);
+    background: url(next-horizontal.png);
 }
 
 .people_says .jcarousel-skin-tango .jcarousel-prev-horizontal:hover, 

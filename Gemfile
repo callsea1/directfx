@@ -57,5 +57,5 @@ end
 
 gem 'httparty'
 
-gem "bxslider-rails", "~> 4.1.0"
+# gem "bxslider-rails", "~> 4.1.0"
 

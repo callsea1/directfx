@@ -25,8 +25,8 @@
 //= require tabs
 //= require tabs-style2
 //= require enquire.min
-// require jquery.cslider
-//= require bxslider
+//= require jquery.fitvids
+//= require jquery.bxslider
 //= require showHide
 //= require scrollup
 //= require carous
