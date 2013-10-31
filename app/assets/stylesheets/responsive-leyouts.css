@@ -55,7 +55,13 @@ ul.bxslider li video{
 
 
 
+
 @media only screen and (min-width: 768px) and (max-width: 1230px){
+
+ul.bxslider li video{
+	 padding: 30px 60px 60px 30px;
+	
+}
 
 
 /*contact item on navbar - to make it fold out from right to left (mirrored of what others do)*/
@@ -403,6 +409,11 @@ a.show_hide{
 
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
+
+ul.bxslider li video{
+	 padding: 80px 60px 60px 60px;
+	
+}
 	
 /* Disable menu */
 #access .menu ul#tiny {display: none;}
@@ -1704,6 +1715,7 @@ ul.bxslider li video{
 	 width: 360px;
 	 height: 300px;
 	 border: none;
+	 padding: 80px 60px 60px 60px;
 }
 
 /* li.bx-clone{
