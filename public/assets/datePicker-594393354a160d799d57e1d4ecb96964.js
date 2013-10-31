@@ -1,1 +1,0 @@
-jQuery(function(){jQuery("#calendar_date").datepicker({dateFormat:"dd-M-yy",inline:!0,showOtherMonths:!0,dayNamesMin:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]})});
