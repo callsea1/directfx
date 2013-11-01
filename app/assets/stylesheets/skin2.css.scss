@@ -81,13 +81,13 @@
     width: 26px;
     height: 27px;
     cursor: pointer;
-    background: transparent url(next-horizontal.png) no-repeat 0 0;
+    background: transparent image_tag("next-horizontal.png") no-repeat 0 0;
 }
 
 .people_says .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
     left: 5px;
     right: auto;
-    background: url(prev-horizontal.png);
+    background: image_tag("prev-horizontal.png");
 }
 
 .people_says .jcarousel-skin-tango .jcarousel-next-horizontal:hover,
@@ -114,13 +114,13 @@
     width: 26px;
     height: 27px;
     cursor: pointer;
-    background: transparent url(prev-horizontal.png) no-repeat 0 0;
+    background: transparent image_tag("prev-horizontal.png") no-repeat 0 0;
 }
 
 .people_says .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal {
     left: auto;
     right: 5px;
-    background: url(next-horizontal.png);
+    background: image_tag("next-horizontal.png");
 }
 
 .people_says .jcarousel-skin-tango .jcarousel-prev-horizontal:hover, 

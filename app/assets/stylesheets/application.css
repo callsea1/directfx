@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require reset
+ *= require jquery.bxslider
  *= require colors/red
  *= require style
  *= require responsive-leyouts
@@ -17,11 +18,10 @@
  * require fullwidth
  * require responsive
  *= require settings
- *= require skin
+ * require skin
  *= require skin2
  *= require thumbzoom
  *= require accordion
  *= require tabs-style2
  *= require tabs
- *= require bxslider
  */
