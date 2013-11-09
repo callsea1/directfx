@@ -4246,7 +4246,7 @@ input.comment_submit:active {
 /*calendar*/
 
 /* DatePicker Container */
-
+/*
 .ui-datepicker {
 	width: auto;
 	height: auto;
@@ -4258,9 +4258,9 @@ input.comment_submit:active {
 
 .ui-datepicker a {
 	text-decoration: none;
-}
+}*/
 /* DatePicker Table */
-.ui-datepicker table {
+/*.ui-datepicker table {
 	width: 100%;
 }
 .ui-datepicker-header {
@@ -4362,7 +4362,7 @@ input.comment_submit:active {
 .ui-datepicker-calendar tr:last-child .ui-state-active {
 	height: 29px;
 	margin-bottom: 0;
-}
+}*/
 
 /********** Accordian faq section **********/
 
@@ -4502,7 +4502,8 @@ input.comment_submit:active {
 
 ul.bxslider li {
 	background: image_url("slider-bg2.jpg") no-repeat;
-
+	/*padding-left: 3.5%;
+*/
 }
 /*moved this sizing to multiple places in responive-leyouts*/
 /*ul.bxslider li video{
@@ -4513,6 +4514,7 @@ ul.bxslider li {
 }*/
 .bx-wrapper .bx-pager {
 	background: image_url("slider-bg2.jpg");
+	visibility: hidden;
 
 }
 

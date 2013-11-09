@@ -1,7 +1,6 @@
 class SiteController < ApplicationController
 
-	def index
-		
+	def index	
 	end
 
 	def contact
@@ -13,5 +12,7 @@ class SiteController < ApplicationController
 	def introducing_broker_confirmation
 	end
 
+	def newsletter_confirmation
+	end
 
 end

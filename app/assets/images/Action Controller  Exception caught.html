@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://localhost:3000/newsletter_signup_thankyou -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body {
+      background-color: #FAFAFA;
+      color: #333;
+      margin: 0px;
+    }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    pre.box {
+      border: 1px solid #EEE;
+      padding: 10px;
+      margin: 0px;
+      width: 958px;
+    }
+
+    header {
+      color: #F0F0F0;
+      background: #C52F24;
+      padding: 0.5em 1.5em;
+    }
+
+    h1 {
+      margin: 0.2em 0;
+      line-height: 1.1em;
+      font-size: 2em;
+    }
+
+    h2 {
+      color: #C52F24;
+      line-height: 25px;
+    }
+
+    .details {
+      border: 1px solid #D0D0D0;
+      border-radius: 4px;
+      margin: 1em 0px;
+      display: block;
+      width: 978px;
+    }
+
+    .summary {
+      padding: 8px 15px;
+      border-bottom: 1px solid #D0D0D0;
+      display: block;
+    }
+
+    .details pre {
+      margin: 5px;
+      border: none;
+    }
+
+    #container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 1.5em;
+    }
+
+    .source * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .source {
+      border: 1px solid #D9D9D9;
+      background: #ECECEC;
+      width: 978px;
+    }
+
+    .source pre {
+      padding: 10px 0px;
+      border: none;
+    }
+
+    .source .data {
+      font-size: 80%;
+      overflow: auto;
+      background-color: #FFF;
+    }
+
+    .info {
+      padding: 0.5em;
+    }
+
+    .source .data .line_numbers {
+      background-color: #ECECEC;
+      color: #AAA;
+      padding: 1em .5em;
+      border-right: 1px solid #DDD;
+      text-align: right;
+    }
+
+    .line {
+      padding-left: 10px;
+    }
+
+    .line:hover {
+      background-color: #F6F6F6;
+    }
+
+    .line.active {
+      background-color: #FFCCCC;
+    }
+
+    a { color: #980905; }
+    a:visited { color: #666; }
+    a:hover { color: #C52F24; }
+
+      #route_table {
+    margin: 0 auto 0;
+    border-collapse: collapse;
+  }
+
+  #route_table td {
+    padding: 0 30px;
+  }
+
+  #route_table tr.bottom th {
+    padding-bottom: 10px;
+    line-height: 15px;
+  }
+
+  #route_table .matched_paths {
+    background-color: LightGoldenRodYellow;
+  }
+
+  #route_table .matched_paths {
+    border-bottom: solid 3px SlateGrey;
+  }
+
+  #path_search {
+    width: 80%;
+    font-size: inherit;
+  }
+
+  </style>
+
+  <script>
+    var toggle = function(id) {
+      var s = document.getElementById(id).style;
+      s.display = s.display == 'none' ? 'block' : 'none';
+      return false;
+    }
+    var show = function(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    var hide = function(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    var toggleTrace = function() {
+      return toggle('blame_trace');
+    }
+    var toggleSessionDump = function() {
+      return toggle('session_dump');
+    }
+    var toggleEnvDump = function() {
+      return toggle('env_dump');
+    }
+  </script>
+</head>
+<body data-ember-extension="1">
+
+<header>
+  <h1>Routing Error</h1>
+</header>
+<div id="container">
+  <h2>No route matches [GET] "/newsletter_signup_thankyou"</h2>
+
+  
+<p><code>Rails.root: /Users/gabe/Documents/ror/omara_trading/directfx_rails</code></p>
+
+<div id="traces">
+    <a href="http://localhost:3000/newsletter_signup_thankyou#" onclick="hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);; return false;">Application Trace</a> |
+    <a href="http://localhost:3000/newsletter_signup_thankyou#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);; return false;">Framework Trace</a> |
+    <a href="http://localhost:3000/newsletter_signup_thankyou#" onclick="hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code></code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+rack (1.5.2) lib/rack/lock.rb:17:in `call'
+actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+railties (4.0.0) lib/rails/engine.rb:511:in `call'
+railties (4.0.0) lib/rails/application.rb:97:in `call'
+rack (1.5.2) lib/rack/lock.rb:17:in `call'
+rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+/Users/gabe/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/gabe/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/gabe/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'</code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+rack (1.5.2) lib/rack/lock.rb:17:in `call'
+actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+railties (4.0.0) lib/rails/engine.rb:511:in `call'
+railties (4.0.0) lib/rails/application.rb:97:in `call'
+rack (1.5.2) lib/rack/lock.rb:17:in `call'
+rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+/Users/gabe/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/gabe/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/gabe/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'</code></pre>
+    </div>
+</div>
+
+
+    <h2>
+      Routes
+    </h2>
+
+    <p>
+      Routes match in priority from top to bottom
+    </p>
+
+    
+<table id="route_table" class="route_table">
+  <thead>
+    <tr>
+      <th>Helper</th>
+      <th>HTTP Verb</th>
+      <th>Path</th>
+      <th>Controller#Action</th>
+    </tr>
+    <tr class="bottom">
+      <th>
+        <a data-route-helper="_path" href="http://localhost:3000/newsletter_signup_thankyou#" title="Returns a relative path (without the http or domain)">Path</a> /
+        <a data-route-helper="_url" href="http://localhost:3000/newsletter_signup_thankyou#" title="Returns an absolute url (with the http and domain)">Url</a>
+      </th>
+      <th>
+      </th>
+      <th>
+        <input id="path_search" name="path[]" placeholder="Path Match" type="search">
+      </th>
+      <th>
+      </th>
+    </tr>
+  </thead>
+  <tbody class="matched_paths" id="matched_paths">
+  </tbody>
+  <tbody>
+    <tr class="route_row" data-helper="path">
+  <td data-route-name="root">
+      root<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/" data-regexp="^\/$">
+    /
+  </td>
+  <td data-route-reqs="site#index">
+    site#index
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="contact">
+      contact<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/get_in_touch(.:format)" data-regexp="^\/get_in_touch(?:\.([^\/.?]+))?$">
+    /get_in_touch(.:format)
+  </td>
+  <td data-route-reqs="site#contact">
+    site#contact
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="introducing_broker">
+      introducing_broker<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/introducing_broker(.:format)" data-regexp="^\/introducing_broker(?:\.([^\/.?]+))?$">
+    /introducing_broker(.:format)
+  </td>
+  <td data-route-reqs="site#introducing_broker">
+    site#introducing_broker
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="introducing_broker_confirmation">
+      introducing_broker_confirmation<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/introducing_broker_thank_you(.:format)" data-regexp="^\/introducing_broker_thank_you(?:\.([^\/.?]+))?$">
+    /introducing_broker_thank_you(.:format)
+  </td>
+  <td data-route-reqs="site#introducing_broker_confirmation">
+    site#introducing_broker_confirmation
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="newsletter_confirmation">
+      newsletter_confirmation<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/newsletter_signup_thank_you(.:format)" data-regexp="^\/newsletter_signup_thank_you(?:\.([^\/.?]+))?$">
+    /newsletter_signup_thank_you(.:format)
+  </td>
+  <td data-route-reqs="site#newsletter_confirmation">
+    site#newsletter_confirmation
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="who">
+      who<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/who_we_are(.:format)" data-regexp="^\/who_we_are(?:\.([^\/.?]+))?$">
+    /who_we_are(.:format)
+  </td>
+  <td data-route-reqs="who_we_are#show">
+    who_we_are#show
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="regulation">
+      regulation<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/regulation(.:format)" data-regexp="^\/regulation(?:\.([^\/.?]+))?$">
+    /regulation(.:format)
+  </td>
+  <td data-route-reqs="who_we_are#regulation">
+    who_we_are#regulation
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="press_release">
+      press_release<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/press_release(.:format)" data-regexp="^\/press_release(?:\.([^\/.?]+))?$">
+    /press_release(.:format)
+  </td>
+  <td data-route-reqs="who_we_are#press">
+    who_we_are#press
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="daily_report">
+      daily_report<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/reports/daily(.:format)" data-regexp="^\/reports\/daily(?:\.([^\/.?]+))?$">
+    /reports/daily(.:format)
+  </td>
+  <td data-route-reqs="reports#daily">
+    reports#daily
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="weekly_report">
+      weekly_report<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/reports/weekly(.:format)" data-regexp="^\/reports\/weekly(?:\.([^\/.?]+))?$">
+    /reports/weekly(.:format)
+  </td>
+  <td data-route-reqs="reports#weekly">
+    reports#weekly
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="economic_calendar">
+      economic_calendar<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET|POST">
+    GET|POST
+  </td>
+  <td data-route-path="/economic_calendar(.:format)" data-regexp="^\/economic_calendar(?:\.([^\/.?]+))?$">
+    /economic_calendar(.:format)
+  </td>
+  <td data-route-reqs="reports#calendar">
+    reports#calendar
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="currensee">
+      currensee<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/currensee(.:format)" data-regexp="^\/currensee(?:\.([^\/.?]+))?$">
+    /currensee(.:format)
+  </td>
+  <td data-route-reqs="forex_trading#currensee">
+    forex_trading#currensee
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="mt4_live_account_signup">
+      mt4_live_account_signup<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/mt4_live_account_signup(.:format)" data-regexp="^\/mt4_live_account_signup(?:\.([^\/.?]+))?$">
+    /mt4_live_account_signup(.:format)
+  </td>
+  <td data-route-reqs="forex_trading#mt4_live_account_signup">
+    forex_trading#mt4_live_account_signup
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="mt4_live_bonus">
+      mt4_live_bonus<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/mt4_cash_bonus(.:format)" data-regexp="^\/mt4_cash_bonus(?:\.([^\/.?]+))?$">
+    /mt4_cash_bonus(.:format)
+  </td>
+  <td data-route-reqs="forex_trading#mt4_live_bonus">
+    forex_trading#mt4_live_bonus
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="mt4_demo_account_signup">
+      mt4_demo_account_signup<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/mt4_demo_account_signup(.:format)" data-regexp="^\/mt4_demo_account_signup(?:\.([^\/.?]+))?$">
+    /mt4_demo_account_signup(.:format)
+  </td>
+  <td data-route-reqs="forex_trading#mt4_demo_account_signup">
+    forex_trading#mt4_demo_account_signup
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="mt4_demo_confirmation">
+      mt4_demo_confirmation<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/mt4_demo_thank_you(.:format)" data-regexp="^\/mt4_demo_thank_you(?:\.([^\/.?]+))?$">
+    /mt4_demo_thank_you(.:format)
+  </td>
+  <td data-route-reqs="forex_trading#mt4_demo_confirmation">
+    forex_trading#mt4_demo_confirmation
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="mt4_live_confirmation">
+      mt4_live_confirmation<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/mt4_live_thank_you(.:format)" data-regexp="^\/mt4_live_thank_you(?:\.([^\/.?]+))?$">
+    /mt4_live_thank_you(.:format)
+  </td>
+  <td data-route-reqs="forex_trading#mt4_live_confirmation">
+    forex_trading#mt4_live_confirmation
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="binary_options">
+      binary_options<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/binary_options(.:format)" data-regexp="^\/binary_options(?:\.([^\/.?]+))?$">
+    /binary_options(.:format)
+  </td>
+  <td data-route-reqs="binary_options#show">
+    binary_options#show
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="binary_options_confirmation">
+      binary_options_confirmation<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/binary_options_thank_you(.:format)" data-regexp="^\/binary_options_thank_you(?:\.([^\/.?]+))?$">
+    /binary_options_thank_you(.:format)
+  </td>
+  <td data-route-reqs="binary_options#binary_options_confirmation">
+    binary_options#binary_options_confirmation
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="binary_support">
+      binary_support<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/binary_options_support(.:format)" data-regexp="^\/binary_options_support(?:\.([^\/.?]+))?$">
+    /binary_options_support(.:format)
+  </td>
+  <td data-route-reqs="binary_options#support">
+    binary_options#support
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="forex">
+      forex<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/forex(.:format)" data-regexp="^\/forex(?:\.([^\/.?]+))?$">
+    /forex(.:format)
+  </td>
+  <td data-route-reqs="binary_options#forex">
+    binary_options#forex
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="metals">
+      metals<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/metals(.:format)" data-regexp="^\/metals(?:\.([^\/.?]+))?$">
+    /metals(.:format)
+  </td>
+  <td data-route-reqs="binary_options#metals">
+    binary_options#metals
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="cfd">
+      cfd<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/cfd(.:format)" data-regexp="^\/cfd(?:\.([^\/.?]+))?$">
+    /cfd(.:format)
+  </td>
+  <td data-route-reqs="binary_options#cfd">
+    binary_options#cfd
+  </td>
+</tr>
+<tr class="route_row" data-helper="path">
+  <td data-route-name="download_pdf">
+      download_pdf<span class="helper">_path</span>
+  </td>
+  <td data-route-verb="GET">
+    GET
+  </td>
+  <td data-route-path="/download_pdf(.:format)" data-regexp="^\/download_pdf(?:\.([^\/.?]+))?$">
+    /download_pdf(.:format)
+  </td>
+  <td data-route-reqs="forex_trading#download_pdf">
+    forex_trading#download_pdf
+  </td>
+</tr>
+
+  </tbody>
+</table>
+
+<script type="text/javascript">
+  function each(elems, func) {
+    if (!elems instanceof Array) { elems = [elems]; }
+    for (var i = 0, len = elems.length; i < len; i++) {
+      func(elems[i]);
+    }
+  }
+
+  function setValOn(elems, val) {
+    each(elems, function(elem) {
+      elem.innerHTML = val;
+    });
+  }
+
+  function onClick(elems, func) {
+    each(elems, function(elem) {
+      elem.onclick = func;
+    });
+  }
+
+  // Enables functionality to toggle between `_path` and `_url` helper suffixes
+  function setupRouteToggleHelperLinks() {
+    var toggleLinks = document.querySelectorAll('#route_table [data-route-helper]');
+    onClick(toggleLinks, function(){
+      var helperTxt   = this.getAttribute("data-route-helper"),
+          helperElems = document.querySelectorAll('[data-route-name] span.helper');
+      setValOn(helperElems, helperTxt);
+    });
+  }
+
+  // takes an array of elements with a data-regexp attribute and
+  // passes their their parent <tr> into the callback function
+  // if the regexp matchs a given path
+  function eachElemsForPath(elems, path, func) {
+    each(elems, function(e){
+      var reg = e.getAttribute("data-regexp");
+      if (path.match(RegExp(reg))) {
+        func(e.parentNode.cloneNode(true));
+      }
+    })
+  }
+
+  // Ensure path always starts with a slash "/" and remove params or fragments
+  function sanitizePath(path) {
+    var path = path.charAt(0) == '/' ? path : "/" + path;
+    return path.replace(/\#.*|\?.*/, '');
+  }
+
+  // Enables path search functionality
+  function setupMatchPaths() {
+    var regexpElems     = document.querySelectorAll('#route_table [data-regexp]'),
+        pathElem        = document.querySelector('#path_search'),
+        selectedSection = document.querySelector('#matched_paths'),
+        noMatchText     = '<tr><th colspan="4">None</th></tr>';
+
+
+    // Remove matches if no path is present
+    pathElem.onblur = function(e) {
+      if (pathElem.value === "") selectedSection.innerHTML = "";
+    }
+
+    // On key press perform a search for matching paths
+    pathElem.onkeyup = function(e){
+      var path        = sanitizePath(pathElem.value),
+          defaultText = '<tr><th colspan="4">Paths Matching (' + path + '):</th></tr>';
+
+      // Clear out results section
+      selectedSection.innerHTML= defaultText;
+
+      // Display matches if they exist
+      eachElemsForPath(regexpElems, path, function(e){
+        selectedSection.appendChild(e);
+      });
+
+      // If no match present, tell the user
+      if (selectedSection.innerHTML === defaultText) {
+        selectedSection.innerHTML = selectedSection.innerHTML + noMatchText;
+      }
+    }
+  }
+
+  setupMatchPaths();
+  setupRouteToggleHelperLinks();
+</script>
+
+</div>
+
+
+
+
+</body></html>
